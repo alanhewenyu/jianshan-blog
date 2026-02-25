@@ -43,7 +43,11 @@ languages:
           专注于公司估值、商业分析与AI在投资中的应用。
       socialIcons:
         - name: github
-          url: "https://github.com/"
+          url: "https://github.com/alanhewenyu"
+        - name: email
+          url: "mailto:alanhe@icloud.com"
+        - name: wechat
+          url: "/wechat/"
         - name: rss
           url: "index.xml"
     menu:
@@ -89,7 +93,11 @@ languages:
           Focused on company valuation, business analysis, and the application of AI in investing.
       socialIcons:
         - name: github
-          url: "https://github.com/"
+          url: "https://github.com/alanhewenyu"
+        - name: email
+          url: "mailto:alanhe@icloud.com"
+        - name: wechat
+          url: "/wechat/"
         - name: rss
           url: "index.xml"
     menu:

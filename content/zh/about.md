@@ -50,3 +50,4 @@ ShowWordCount: false
 
 - 微信公众号：**见山笔记**
 - 邮箱：alanhe@icloud.com
+- GitHub：[github.com/alanhewenyu](https://github.com/alanhewenyu)
