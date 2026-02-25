@@ -36,7 +36,7 @@ TocOpen: false
 
 再来看看，与去年一季度相比，美团一季度的经营利润率表现：
 
-![Untitled](Untitled 1.png)
+![Untitled](Untitled-1.png)
 
 核心本地商业的经营利润率不及去年同期，美团在一季报中解释原因主要是客单价下降及交易补贴增加（主要是由于抖音的竞争）。但我认为，与去年同期相比下降并不重要，因为市场早已反映了抖音的竞争影响和当前消费环境的变化。
 
@@ -44,7 +44,7 @@ TocOpen: false
 
 ### 美团过去5年的收入增长率和经营利润率
 
-![Untitled](Untitled 2.png)
+![Untitled](Untitled-2.png)
 
 可以看到，美团过去5年的经营利润率（EBIT_MARGIN）持续提升。2023年大概为3%，今年一季报达到了8%（这个数字与前面列示的定期报告数字有差异，主要是口径差异）。
 
@@ -71,13 +71,13 @@ TocOpen: false
     
 - **其他假设**：WACC为10%，所得税税率15%。
 
-![Untitled](Untitled 3.png)
+![Untitled](Untitled-3.png)
 
 ### DCF估值结果
 
 基于上述假设计算，美团每股内在价值约为为117元人民币。
 
-![Untitled](Untitled 4.png)
+![Untitled](Untitled-4.png)
 
 由于财务数据是按人民币列示的，上述计算出的内在价值是人民币。如果折算成港币，以当前汇率计算，大概为128港币。
 
@@ -87,7 +87,7 @@ TocOpen: false
 
 以下是基于收入增长和经营利润率两个变量的敏感性分析：
 
-![Untitled](Untitled 5.png)
+![Untitled](Untitled-5.png)
 
 假设10%的目标经营利润率不变，2025至2028年收入增长提升到15%，每股内在价值约为139元人民币。
 

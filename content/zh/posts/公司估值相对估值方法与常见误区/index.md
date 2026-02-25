@@ -58,7 +58,7 @@ TocOpen: false
 
 从上述市盈率可见，三家运营商的市盈率是基本相近的。事实上，中国联通的P/CF明显偏低主要是因为其少数股东权益占比较高，少数股东权益所对应的现金流也是公司层面现金流的一部分，但股价并未反映出少数股东权益的价值。
 
-![Untitled](Untitled 1.png)
+![Untitled](Untitled-1.png)
 
 ## EV/EBITDA
 

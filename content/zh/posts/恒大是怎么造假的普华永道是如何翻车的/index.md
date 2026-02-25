@@ -37,7 +37,7 @@ TocOpen: false
 
 中国恒大的年报对收入确认时点的描述相对更具体一些：
 
-![Untitled](Untitled 1.png)
+![Untitled](Untitled-1.png)
 
 根据这份年报，收入确认是在当客户实际占有（obtains the physical possession）已完工房产或者拿到房产证时。
 
@@ -47,11 +47,11 @@ TocOpen: false
 
 查阅2020年万科的公司债年报，收入确认政策如下：
 
-![Untitled](Untitled 2.png)
+![Untitled](Untitled-2.png)
 
 这一政策一直延续到现在，万科2023年的公司债年报仍然是同样的描述。同样查看万科的香港上市主体年报，收入确认政策如下：
 
-![Untitled](Untitled 3.png)
+![Untitled](Untitled-3.png)
 
 总结来看，万科的收入确认时点标准是“交付”或者“视同客户接收”。万科境内发债主体报告里所说的“在客户取得相关商品控制权时点”，可以理解为是“视同客户接收”，至于怎么个判断标准，没有细说，留有余地。
 
@@ -82,7 +82,7 @@ TocOpen: false
 
 重新调整收入的结果是恒大2021年财务报表合同负债（即收取的预售款）激增，从2020年的1450亿增加至2021年的约8000亿，资产负债表相应出现净负债和净流动负债。
 
-![Untitled](Untitled 4.png)
+![Untitled](Untitled-4.png)
 
 ### “视同接收“的尺度
 
