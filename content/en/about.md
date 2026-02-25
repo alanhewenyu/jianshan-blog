@@ -8,6 +8,18 @@ ShowReadingTime: false
 ShowWordCount: false
 ---
 
+## About Me
+
+Hello, welcome to my blog! You're also welcome to follow my WeChat Official Account: **Jianshan Notes** (见山笔记).
+
+In this era of short videos and algorithms, knowledge is becoming increasingly fragmented, independent thinking is trapped in filter bubbles, and it's harder than ever to sit down and read or write. Yet the depth of thought and long-term value that long-form writing provides cannot be replaced by quick, bite-sized content.
+
+Writing serves me in three ways: first, to document my investment insights, business analysis, and professional knowledge; second, to build a personal brand and influence; and finally, to connect and exchange ideas with you.
+
+Thank you for visiting — I look forward to the conversation!
+
+---
+
 ## Jianshan Notes
 
 **Jianshan Notes** is an independent blog focused on value investing and business analysis, created and maintained by Wenyu He.
