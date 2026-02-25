@@ -1,0 +1,205 @@
+baseURL: "https://jianshan.co/"
+title: "见山笔记"
+theme: "PaperMod"
+paginate: 10
+defaultContentLanguage: zh
+defaultContentLanguageInSubdir: false
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+
+# CJK word count
+hasCJKLanguage: true
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON  # Required for search
+
+# ==================
+# Multilingual
+# ==================
+languages:
+  zh:
+    languageName: "中文"
+    weight: 1
+    contentDir: content/zh
+    title: "见山笔记"
+    params:
+      description: "价值投资、商业分析"
+      author: "贺文宇"
+      homeInfoParams:
+        Title: "见山笔记"
+        Content: >
+          DCF是价值投资的第一性原理。模糊的正确优于精确的错误。
+
+          专注于公司估值、商业分析与AI在投资中的应用。
+      socialIcons:
+        - name: github
+          url: "https://github.com/"
+        - name: rss
+          url: "index.xml"
+    menu:
+      main:
+        - identifier: posts
+          name: "文章"
+          url: /posts/
+          weight: 10
+        - identifier: categories
+          name: "分类"
+          url: /categories/
+          weight: 20
+        - identifier: tags
+          name: "标签"
+          url: /tags/
+          weight: 30
+        - identifier: valuation
+          name: "估值工具"
+          url: "https://valux-dcf.streamlit.app/"
+          weight: 40
+        - identifier: search
+          name: "搜索"
+          url: /search/
+          weight: 50
+        - identifier: about
+          name: "关于"
+          url: /about/
+          weight: 60
+
+  en:
+    languageName: "English"
+    weight: 2
+    contentDir: content/en
+    title: "Jianshan Notes"
+    params:
+      description: "Value Investing & Business Analysis"
+      author: "Wenyu He"
+      homeInfoParams:
+        Title: "Jianshan Notes"
+        Content: >
+          DCF is the first principle of value investing. Being roughly right is better than being precisely wrong.
+
+          Focused on company valuation, business analysis, and the application of AI in investing.
+      socialIcons:
+        - name: github
+          url: "https://github.com/"
+        - name: rss
+          url: "index.xml"
+    menu:
+      main:
+        - identifier: posts
+          name: "Posts"
+          url: /en/posts/
+          weight: 10
+        - identifier: categories
+          name: "Categories"
+          url: /en/categories/
+          weight: 20
+        - identifier: tags
+          name: "Tags"
+          url: /en/tags/
+          weight: 30
+        - identifier: valuation
+          name: "Valuation Tool"
+          url: "https://valux-dcf.streamlit.app/"
+          weight: 40
+        - identifier: search
+          name: "Search"
+          url: /en/search/
+          weight: 50
+        - identifier: about
+          name: "About"
+          url: /en/about/
+          weight: 60
+
+# ==================
+# Theme Parameters
+# ==================
+params:
+  env: production
+  author: "贺文宇"
+  description: "价值投资、商业分析"
+  keywords:
+    - 价值投资
+    - DCF
+    - 公司估值
+    - 商业分析
+    - AI投资
+
+  defaultTheme: auto  # auto/dark/light
+  ShowReadingTime: true
+  ShowWordCount: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowShareButtons: true
+  ShowToc: true
+  TocOpen: false
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  hidemeta: false
+  hideSummary: false
+
+  # Home page mode
+  homeInfoParams:
+    Title: "见山笔记"
+    Content: >
+      DCF是价值投资的第一性原理。模糊的正确优于精确的错误。
+
+  # Search
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys:
+      - title
+      - permalink
+      - summary
+      - content
+
+  # Profile mode (disabled, using homeInfo mode)
+  profileMode:
+    enabled: false
+
+  # Cover image settings
+  cover:
+    hidden: false
+    hiddenInList: false
+    hiddenInSingle: false
+
+  # Edit link
+  editPost:
+    URL: ""
+    Text: ""
+    appendFilePath: false
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+privacy:
+  disqus:
+    disable: true
+  googleAnalytics:
+    disable: true
+  instagram:
+    disable: true
+  x:
+    disable: true
+  vimeo:
+    disable: true
+  youtube:
+    disable: true
