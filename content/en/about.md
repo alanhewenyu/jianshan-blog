@@ -48,4 +48,5 @@ We have developed an open-source DCF valuation tool — [Valux DCF](https://valu
 
 ### Contact
 
-For any questions or discussions, feel free to reach out via GitHub.
+- WeChat Official Account: **见山笔记**
+- Email: alanhe@icloud.com

@@ -48,4 +48,5 @@ ShowWordCount: false
 
 ### 联系
 
-如有任何问题或交流，欢迎通过 GitHub 联系。
+- 微信公众号：**见山笔记**
+- 邮箱：alanhe@icloud.com
