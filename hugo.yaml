@@ -34,7 +34,7 @@ languages:
     title: "见山笔记"
     params:
       description: "价值投资、商业分析"
-      author: "贺文宇"
+      author: "沧浪"
       homeInfoParams:
         Title: "见山笔记"
         Content: >
@@ -80,7 +80,7 @@ languages:
     title: "Jianshan Notes"
     params:
       description: "Value Investing & Business Analysis"
-      author: "Wenyu He"
+      author: "沧浪"
       homeInfoParams:
         Title: "Jianshan Notes"
         Content: >
@@ -124,7 +124,7 @@ languages:
 # ==================
 params:
   env: production
-  author: "贺文宇"
+  author: "沧浪"
   description: "价值投资、商业分析"
   keywords:
     - 价值投资

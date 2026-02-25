@@ -22,7 +22,7 @@ Thank you for visiting — I look forward to the conversation!
 
 ## Jianshan Notes
 
-**Jianshan Notes** is an independent blog focused on value investing and business analysis, created and maintained by Wenyu He.
+**Jianshan Notes** is an independent blog focused on value investing and business analysis, created and maintained by Canglang.
 
 ### Core Philosophy
 
