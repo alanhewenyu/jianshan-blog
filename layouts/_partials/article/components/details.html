@@ -30,39 +30,37 @@
         {{ end }}
     </div>
 
-    {{ $showReadingTime := $Page.Params.readingTime | default (.Site.Params.article.readingTime) }}
     {{ $showDate := not $Page.Date.IsZero }}
-    {{ $showFooter := or $showDate $showReadingTime }}
-    {{ if $showFooter }}
+    {{ if $showDate }}
     <footer class="article-time">
-        {{ if $showDate }}
+        <div>
+            {{ partial "helper/icon" "date" }}
+            <time class="article-time--published" datetime='{{ $Page.Date.Format "2006-01-02T15:04:05Z07:00" }}'>
+                {{- $Page.Date | time.Format $Page.Site.Params.dateFormat.published -}}
+            </time>
+        </div>
+
+        {{/* Author */}}
+        {{ with $Page.Site.Params.author.name }}
             <div>
-                {{ partial "helper/icon" "date" }}
-                <time class="article-time--published" datetime='{{ $Page.Date.Format "2006-01-02T15:04:05Z07:00" }}'>
-                    {{- $Page.Date | time.Format $Page.Site.Params.dateFormat.published -}}
-                </time>
+                {{ partial "helper/icon" "user" }}
+                <span>{{ . }}</span>
             </div>
         {{ end }}
 
-        {{ if $showReadingTime }}
-            <div>
-                {{ partial "helper/icon" "clock" }}
-                <time class="article-time--reading">
-                    {{ T "article.readingTime" $Page.ReadingTime }}
-                </time>
-            </div>
-        {{ end }}
+        {{/* Word count */}}
+        <div>
+            {{ partial "helper/icon" "hash" }}
+            <span>{{ $Page.WordCount }} {{ cond (eq $Page.Language.Lang "en") "words" "字" }}</span>
+        </div>
+
+        {{/* Reading time */}}
+        <div>
+            {{ partial "helper/icon" "clock" }}
+            <time class="article-time--reading">
+                {{ T "article.readingTime" $Page.ReadingTime }}
+            </time>
+        </div>
     </footer>
-    {{ end }}
-
-    {{ if $Page.IsTranslated }}
-        <footer class="article-translations">
-            {{ partial "helper/icon" "language" }}
-            <div>
-                {{ range $Page.Translations }}
-                    <a href="{{ .RelPermalink }}" class="link">{{ .Language.LanguageName }}</a>
-                {{ end }}
-            </div>
-        </footer>
     {{ end }}
 </div>

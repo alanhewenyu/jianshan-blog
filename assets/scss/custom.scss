@@ -1,0 +1,72 @@
+/* ==================
+   Custom styles for Jianshan Notes
+   ================== */
+
+/* --- Middle column: reduce font sizes for better proportion --- */
+
+/* Article title in list */
+.article-list .article-title {
+    font-size: 1.8rem;
+}
+
+/* Article subtitle/summary in list */
+.article-list .article-subtitle {
+    font-size: 1.4rem;
+}
+
+/* Article metadata (date, author, word count, reading time) */
+.article-time {
+    time, span, a {
+        font-size: 1.3rem;
+    }
+}
+
+/* --- Language switcher: inline links instead of dropdown --- */
+
+#i18n-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--menu-icon-separation);
+    color: var(--body-text-color);
+
+    select {
+        display: none; /* hide original dropdown */
+    }
+
+    .lang-links {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: inherit;
+    }
+
+    .lang-sep {
+        color: var(--body-text-color);
+        opacity: 0.3;
+        user-select: none;
+    }
+
+    .lang-current {
+        font-weight: 700;
+        color: var(--body-text-color);
+    }
+
+    .lang-link {
+        color: var(--body-text-color);
+        opacity: 0.6;
+        text-decoration: none;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+/* --- Article meta row: word count style --- */
+.article-time > div {
+    svg {
+        width: 18px;
+        height: 18px;
+    }
+}
