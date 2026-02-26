@@ -61,6 +61,15 @@
                 {{ T "article.readingTime" $Page.ReadingTime }}
             </time>
         </div>
+
+        {{/* Category tags */}}
+        {{ with $Page.GetTerms "categories" }}
+            <div class="article-category-tags">
+                {{ range . }}
+                    <a href="{{ .RelPermalink }}" class="article-category-tag">{{ .LinkTitle }}</a>
+                {{ end }}
+            </div>
+        {{ end }}
     </footer>
     {{ end }}
 </div>

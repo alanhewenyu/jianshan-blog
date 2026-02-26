@@ -80,6 +80,29 @@
     }
 }
 
+/* --- Article category tags (inline after reading time) --- */
+.article-category-tags {
+    display: inline-flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-left: 4px;
+}
+
+.article-category-tag {
+    font-size: 1.2rem;
+    color: var(--accent-color, #3273dc);
+    background: var(--accent-color-alpha, rgba(50, 115, 220, 0.08));
+    padding: 1px 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
 /* --- Article meta row: icon size --- */
 .article-time > div {
     svg {
