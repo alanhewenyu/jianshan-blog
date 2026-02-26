@@ -41,6 +41,8 @@ The web version doesn't include AI — you set the parameters yourself. But for 
 
 Web version: https://valux-dcf.streamlit.app
 
+![ValuX Web Interface](img_1.png)
+
 ## Advanced: Let AI Help Judge Valuation Parameters
 
 The web version solves the "calculation" problem, but DCF's real challenge is — **how do you set the parameters?**
@@ -59,11 +61,20 @@ With AI connected, it will:
 The AI version requires downloading ValuX to your computer (installation instructions at the GitHub link below). Two usage modes:
 
 - **Terminal version**: Command-line interaction with manual, AI-assisted, and fully automated valuation modes.
+
+![ValuX Terminal Interface](img_2.jpg)
+
 - **Local web version**: Same visual interface as the online version with drag sliders and real-time updates, plus AI auto-valuation capability.
+
+![ValuX Local Web Interface](img_3.jpg)
+
+![ValuX Valuation Results](img_4.jpg)
 
 Both versions are functionally identical, support Chinese and English, and allow both automated and manual parameter input.
 
 ## About AI Engines
+
+![ValuX AI Engine Selection](img_5.png)
 
 ValuX supports three AI engines:
 

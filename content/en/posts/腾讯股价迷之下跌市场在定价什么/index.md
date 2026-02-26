@@ -24,6 +24,8 @@ From a relative valuation perspective, Tencent's current trailing P/E is around 
 
 However, the P/E ratio is quite misleading when applied to Tencent. Beyond its three core businesses — gaming, advertising, and fintech — Tencent held approximately RMB 1.1 trillion in listed and unlisted equity investments as of its September 2025 quarterly report. This portfolio contributes only modest investment income and fair value changes to the income statement.
 
+![Tencent Investment Portfolio and Market Cap Breakdown](img_1.png)
+
 Tencent's current market cap is approximately HK$4.9 trillion (about RMB 4.3 trillion). Subtracting the RMB 1.1 trillion investment portfolio, the market cap attributable to core operations is only about RMB 3.2 trillion — implying a "real" P/E of roughly 15x. That's quite attractive.
 
 (Note: This doesn't even account for net cash — Tencent's cash minus interest-bearing debt leaves approximately RMB 100 billion in net cash.)

@@ -20,6 +20,8 @@ I recently tried using Claude Opus 4.6 to do DCF valuations for public companies
 
 Here's what Claude generated on its first try, without any debugging — a DCF valuation for Netflix. Both the methodology and output were impressive.
 
+![Netflix DCF Valuation Spreadsheet](img_1.png)
+
 If you handed this task to a finance professional, even an experienced one, it would take at least half a day to a full day — with no guarantee the model would be properly structured, the assumptions reasonable, or the work error-free.
 
 For a brief moment, the impact was real — the "technical moats" that traditional finance and accounting professionals have relied on are being rapidly eroded by AI. But this isn't just a threat. It also means that much of the analytical work currently done by industry professionals can be replaced by AI, and those who learn to leverage AI will gain enormous efficiency advantages. A restructuring of productivity and professional relationships has already begun.
@@ -53,6 +55,10 @@ In other words, through Claude, we can now let AI handle the entire process of f
 ## From "Running It Once" to "Reusable Capability"
 
 If you're not satisfied with Claude's output, you can continue the conversation: adjust the calculation logic, refine assumptions, optimize the Excel layout — iterate until you're satisfied.
+
+![Constellation DCF Valuation Spreadsheet 1](img_2.png)
+
+![Constellation DCF Valuation Spreadsheet 2](img_3.png)
 
 What's even more noteworthy is that you can package your refined output into a "skill" — a reusable, reproducible capability. Next time you need to analyze a different company's DCF, just invoke it. Like standardizing a recipe to ensure consistent results every time.
 
