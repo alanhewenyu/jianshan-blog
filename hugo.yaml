@@ -143,7 +143,7 @@ params:
       enabled: false
 
   newsletter:
-    buttondownId: "jianshan"  # TODO: 注册 buttondown.com 后替换为你的用户名
+    buttondownId: "alanhewenyu"
 
   widgets:
     homepage:
