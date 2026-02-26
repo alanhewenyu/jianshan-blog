@@ -41,7 +41,7 @@ menu:
 
 ### 估值工具
 
-我们开发了一个开源的DCF估值工具 [Valux DCF](https://valux-dcf.streamlit.app/)，帮助投资者快速进行现金流折现分析。
+我们开发了一个开源的DCF估值工具 [ValuX](https://valux-dcf.streamlit.app/)，帮助投资者快速进行现金流折现分析。
 
 ### 联系
 
