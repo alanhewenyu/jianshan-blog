@@ -36,7 +36,7 @@ languages:
       description: "价值投资、商业分析"
       author: "沧浪"
       homeInfoParams:
-        Title: "模糊的正确优于精确的错误"
+        Title: "价值投资，知行合一"
         Content: >
           专注于公司估值、商业分析与AI在投资中的应用。
       socialIcons:
@@ -84,7 +84,7 @@ languages:
       description: "Value Investing & Business Analysis"
       author: "沧浪"
       homeInfoParams:
-        Title: "Being Roughly Right Is Better Than Being Precisely Wrong"
+        Title: "Value Investing, Unity of Knowledge and Action"
         Content: >
           Focused on company valuation, business analysis, and the application of AI in investing.
       socialIcons:
@@ -153,7 +153,7 @@ params:
 
   # Home page mode
   homeInfoParams:
-    Title: "模糊的正确优于精确的错误"
+    Title: "价值投资，知行合一"
     Content: >
       专注于公司估值、商业分析与AI在投资中的应用。
 
