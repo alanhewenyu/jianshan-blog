@@ -64,17 +64,17 @@ The AI version requires downloading ValuX to your computer (installation instruc
 
 ![ValuX Terminal Interface](img_2.jpg)
 
+![ValuX Terminal Valuation Results](img_3.jpg)
+
+![ValuX Terminal Export](img_4.jpg)
+
 - **Local web version**: Same visual interface as the online version with drag sliders and real-time updates, plus AI auto-valuation capability.
 
-![ValuX Local Web Interface](img_3.jpg)
-
-![ValuX Valuation Results](img_4.jpg)
+![ValuX Local Web Interface](img_5.png)
 
 Both versions are functionally identical, support Chinese and English, and allow both automated and manual parameter input.
 
 ## About AI Engines
-
-![ValuX AI Engine Selection](img_5.png)
 
 ValuX supports three AI engines:
 
