@@ -177,7 +177,7 @@ markup:
 
 services:
   googleAnalytics:
-    ID: "G-XXXXXXXXXX"  # TODO: replace with your GA4 Measurement ID
+    ID: "G-V43CZJ8B32"
 
 privacy:
   disqus:
