@@ -21,6 +21,14 @@
     }
 }
 
+/* --- Sidebar: align nav, language, dark mode text to same position --- */
+.left-sidebar #main-menu > li > a {
+    gap: 10px;
+}
+#dark-mode-toggle {
+    gap: 10px !important;
+}
+
 /* --- Language switcher: compact inline links --- */
 
 #i18n-switch {
@@ -103,6 +111,19 @@
 
     .article-time {
         gap: 10px;
+    }
+}
+
+/* Archives subsection category tiles: shorter height */
+.subsection-list .article-list--tile article {
+    height: 80px !important;
+
+    .article-details {
+        padding: 15px !important;
+    }
+
+    .article-title {
+        font-size: 1.5rem;
     }
 }
 
