@@ -142,9 +142,13 @@ params:
     license:
       enabled: false
 
+  newsletter:
+    buttondownId: "jianshan"  # TODO: 注册 buttondown.com 后替换为你的用户名
+
   widgets:
     homepage:
       - type: search
+      - type: subscribe
       - type: archives
         params:
           limit: 5

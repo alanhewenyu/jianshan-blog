@@ -1,0 +1,90 @@
+{{- $context := .Context -}}
+{{- $params := .Params -}}
+{{- $buttondownId := default "" $context.Site.Params.newsletter.buttondownId -}}
+
+{{ if $buttondownId }}
+<section class="widget subscribe">
+    <div class="widget-icon">
+        {{ partial "helper/icon" "newsletter" }}
+    </div>
+    <h2 class="widget-title section-title">
+        {{ cond (eq $context.Language.Lang "en") "Subscribe" "邮件订阅" }}
+    </h2>
+    <div class="subscribe-content">
+        <p class="subscribe-desc">
+            {{ cond (eq $context.Language.Lang "en") "Get new posts delivered to your inbox." "新文章直达邮箱，不错过每一篇。" }}
+        </p>
+        <form
+            action="https://buttondown.com/api/emails/newsletter-subscribe"
+            method="post"
+            target="popupwindow"
+            onsubmit="window.open('https://buttondown.com/{{ $buttondownId }}', 'popupwindow')"
+            class="subscribe-form"
+        >
+            <input type="hidden" name="embed" value="1" />
+            <input type="hidden" name="tag" value="" />
+            <input
+                type="email"
+                name="email"
+                id="bd-email"
+                placeholder="{{ cond (eq $context.Language.Lang "en") "your@email.com" "输入邮箱地址" }}"
+                required
+                class="subscribe-input"
+            />
+            <button type="submit" class="subscribe-btn">
+                {{ cond (eq $context.Language.Lang "en") "Subscribe" "订阅" }}
+            </button>
+        </form>
+    </div>
+</section>
+
+<style>
+.widget.subscribe .subscribe-content {
+    padding: 0 5px;
+}
+.widget.subscribe .subscribe-desc {
+    font-size: 0.9rem;
+    color: var(--card-text-color-secondary);
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+.widget.subscribe .subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.widget.subscribe .subscribe-input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid var(--card-separator-color);
+    border-radius: var(--card-border-radius, 10px);
+    background: var(--card-background);
+    color: var(--card-text-color-main);
+    font-size: 0.85rem;
+    outline: none;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+}
+.widget.subscribe .subscribe-input:focus {
+    border-color: var(--accent-color);
+}
+.widget.subscribe .subscribe-input::placeholder {
+    color: var(--card-text-color-tertiary);
+}
+.widget.subscribe .subscribe-btn {
+    width: 100%;
+    padding: 8px 16px;
+    border: none;
+    border-radius: var(--card-border-radius, 10px);
+    background: var(--accent-color);
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+.widget.subscribe .subscribe-btn:hover {
+    opacity: 0.85;
+}
+</style>
+{{ end }}
