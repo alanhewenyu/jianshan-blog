@@ -6,7 +6,8 @@ slug: "我劝天公重抖擞不拘一格降人才"
 categories: ["Life Reflections"]
 tags: []
 summary: ""
-toc: true
+ShowToc: true
+TocOpen: false
 ---
 
 This morning, a light rain fell over Beijing. It seems that every year around the time of the Gaokao (China's national college entrance examination), rain comes to many parts of the country. This brings to mind a famous line by the Qing dynasty poet Gong Zizhen: "I urge the heavens to rouse their spirit once more, and bestow talent upon us in every form." One hopes that this weather brings a touch of coolness to the examinees, helping them perform at their best.

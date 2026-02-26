@@ -6,7 +6,8 @@ slug: "看懂财务报表从现金流量表开始"
 categories: ["财报分析"]
 tags: ["价值投资", "财务报表", "估值", "IFRS"]
 summary: ""
-toc: true
+ShowToc: true
+TocOpen: false
 ---
 
 在价值投资与公司估值之间，还需要一座沟通的桥梁，那就是财务报表。

@@ -6,7 +6,8 @@ slug: "透过财报看香港交易所"
 categories: ["财报分析"]
 tags: ["DCF", "价值投资", "财务报表", "估值", "香港", "人民币"]
 summary: ""
-toc: true
+ShowToc: true
+TocOpen: false
 ---
 
 香港交易所不仅是个交易所，还是个上市公司，而且是很赚钱的上市公司。港交所不仅很赚钱，分红也很大方。

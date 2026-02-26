@@ -6,7 +6,8 @@ slug: "价值投资在中国可行么重读李录2015年北大演讲"
 categories: ["商业分析"]
 tags: ["价值投资", "巴菲特", "芒格"]
 summary: ""
-toc: true
+ShowToc: true
+TocOpen: false
 ---
 
 ## 关于李录

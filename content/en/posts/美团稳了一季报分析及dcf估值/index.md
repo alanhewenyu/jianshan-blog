@@ -6,7 +6,8 @@ slug: "美团稳了一季报分析及dcf估值"
 categories: ["Company Valuation"]
 tags: ["DCF", "Value Investing", "Financial Statements", "Valuation", "WACC", "Tencent", "Meituan", "Hong Kong", "RMB", "Consumer"]
 summary: ""
-toc: true
+ShowToc: true
+TocOpen: false
 ---
 
 Since last December, Meituan's stock price has been on a roller coaster ride, tracing a V-shaped trajectory.

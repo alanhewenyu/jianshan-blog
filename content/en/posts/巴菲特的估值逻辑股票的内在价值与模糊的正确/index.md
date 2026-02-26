@@ -6,7 +6,8 @@ slug: "巴菲特的估值逻辑股票的内在价值与模糊的正确"
 categories: ["Buffett & Munger Philosophy"]
 tags: ["DCF", "Value Investing", "Buffett", "Financial Statements", "Valuation", "P/E Ratio"]
 summary: ""
-toc: true
+ShowToc: true
+TocOpen: false
 ---
 
 ## Intrinsic Value

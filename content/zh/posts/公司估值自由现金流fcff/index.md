@@ -6,7 +6,8 @@ slug: "公司估值自由现金流fcff"
 categories: ["公司估值"]
 tags: ["DCF", "价值投资", "ROIC", "巴菲特", "财务报表", "估值", "WACC"]
 summary: ""
-toc: true
+ShowToc: true
+TocOpen: false
 ---
 
 之前文章说到，公司的自由现金流（FCFF）是税后经营利润（NOPAT）扣除维持和发展业务所需的资本投入（再投资）后的剩余部分。

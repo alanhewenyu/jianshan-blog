@@ -6,7 +6,8 @@ slug: "香港的由来及人口和经济变迁"
 categories: ["Business Analysis"]
 tags: ["Hong Kong", "RMB"]
 summary: ""
-toc: true
+ShowToc: true
+TocOpen: false
 ---
 
 ## **There Is a "Hong Kong" Within Hong Kong**

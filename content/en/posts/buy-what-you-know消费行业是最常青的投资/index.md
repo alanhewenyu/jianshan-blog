@@ -6,7 +6,8 @@ slug: "buy-what-you-know消费行业是最常青的投资"
 categories: ["Business Analysis"]
 tags: ["Buffett", "Financial Statements", "Hong Kong", "A-shares", "Consumer"]
 summary: ""
-toc: true
+ShowToc: true
+TocOpen: false
 ---
 
 ## Buy What You Know

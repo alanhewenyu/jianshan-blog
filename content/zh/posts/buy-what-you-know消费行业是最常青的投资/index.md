@@ -6,7 +6,8 @@ slug: "buy-what-you-know消费行业是最常青的投资"
 categories: ["商业分析"]
 tags: ["巴菲特", "财务报表", "香港", "A股", "消费"]
 summary: ""
-toc: true
+ShowToc: true
+TocOpen: false
 ---
 
 ## Buy what you know

@@ -6,7 +6,8 @@ slug: "如何计算和使用资本回报率-roic"
 categories: ["公司估值"]
 tags: ["ROIC", "财务报表", "估值", "WACC"]
 summary: ""
-toc: true
+ShowToc: true
+TocOpen: false
 ---
 
 ## 如何计算资本回报率（ROIC）

@@ -6,7 +6,8 @@ slug: "股票投资回报的核心驱动因素"
 categories: ["公司估值"]
 tags: ["DCF", "价值投资", "ROIC", "巴菲特", "估值", "市盈率"]
 summary: ""
-toc: true
+ShowToc: true
+TocOpen: false
 ---
 
 ## 股票的投资回报与公司内在价值

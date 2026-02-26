@@ -6,7 +6,8 @@ slug: "自由现金流折现估值dcf是价值投资者的第一性原理"
 categories: ["Company Valuation"]
 tags: ["DCF", "Value Investing", "Buffett", "Munger", "Financial Statements", "Valuation", "Index Funds", "A-Shares", "P/E Ratio"]
 summary: ""
-toc: true
+ShowToc: true
+TocOpen: false
 ---
 
 Stock investing is the best way for ordinary people to acquire company equity and share in the growth of corporate revenue and profits.

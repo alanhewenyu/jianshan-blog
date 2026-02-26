@@ -6,7 +6,8 @@ slug: "如何看待美团与抖音的竞争"
 categories: ["商业分析"]
 tags: ["DCF", "巴菲特", "财务报表", "估值", "美团", "人民币", "市盈率"]
 summary: ""
-toc: true
+ShowToc: true
+TocOpen: false
 ---
 
 ## 美团股价为什么大跌

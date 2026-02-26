@@ -6,7 +6,8 @@ slug: "为什么巴菲特很少在美国之外投资"
 categories: ["Buffett & Munger Philosophy"]
 tags: ["Value Investing", "Buffett", "Munger", "Index Funds", "Alibaba", "Hong Kong", "AI"]
 summary: ""
-toc: true
+ShowToc: true
+TocOpen: false
 ---
 
 The 2024 Berkshire Hathaway Annual Shareholders Meeting has just concluded. Known as the "Woodstock of Capitalism," it attracts the attention of global investors every year. As a Chinese audience, we are naturally keen to hear Buffett's views on investing in China.

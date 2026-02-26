@@ -6,7 +6,8 @@ slug: "公司估值如何计算永续价值"
 categories: ["Company Valuation"]
 tags: ["DCF", "ROIC", "Valuation", "WACC", "Consumer"]
 summary: ""
-toc: true
+ShowToc: true
+TocOpen: false
 ---
 
 As discussed in previous articles, when valuing a company using discounted cash flow analysis, a two-stage cash flow model is typically employed, consisting of an explicit forecast period and a perpetuity period. The present value of the perpetuity-period cash flows is the company's terminal value.

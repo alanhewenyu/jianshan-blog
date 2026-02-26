@@ -18,15 +18,10 @@
 <script>
 // When user switches back to Chinese, remember their preference
 document.addEventListener('DOMContentLoaded', function() {
+  var zhLinks = document.querySelectorAll('a[hreflang="zh"], a.lang-switch a[href*="jianshan.co/"]');
   // Find language switch links pointing to Chinese version
-  document.querySelectorAll('a[hreflang="zh"], a.lang-switch a[href*="jianshan.co/"]').forEach(function(a) {
-    a.addEventListener('click', function() {
-      localStorage.setItem('lang-preference', 'zh');
-    });
-  });
-  // Also check any nav links that go to non-English pages
-  document.querySelectorAll('.lang-switch a, a[href]:not([href*="/en/"])').forEach(function(a) {
-    if (a.textContent.includes('中文') || a.textContent.includes('Chinese')) {
+  document.querySelectorAll('.lang-switch a').forEach(function(a) {
+    if (!a.href.includes('/en/') && !a.href.includes('/en"')) {
       a.addEventListener('click', function() {
         localStorage.setItem('lang-preference', 'zh');
       });

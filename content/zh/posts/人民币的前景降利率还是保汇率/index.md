@@ -6,7 +6,8 @@ slug: "人民币的前景降利率还是保汇率"
 categories: ["商业分析"]
 tags: ["香港", "人民币", "消费"]
 summary: ""
-toc: true
+ShowToc: true
+TocOpen: false
 ---
 
 ## 决定汇率的因素

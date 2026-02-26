@@ -6,7 +6,8 @@ slug: "美团稳了一季报分析及dcf估值"
 categories: ["公司估值"]
 tags: ["DCF", "价值投资", "财务报表", "估值", "WACC", "腾讯", "美团", "香港", "人民币", "消费"]
 summary: ""
-toc: true
+ShowToc: true
+TocOpen: false
 ---
 
 自去年12月以来，美团股价经历了过山车般的起伏，呈现出V字形走势。

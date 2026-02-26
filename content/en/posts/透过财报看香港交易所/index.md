@@ -6,7 +6,8 @@ slug: "透过财报看香港交易所"
 categories: ["Financial Statement Analysis"]
 tags: ["DCF", "Value Investing", "Financial Statements", "Valuation", "Hong Kong", "RMB"]
 summary: ""
-toc: true
+ShowToc: true
+TocOpen: false
 ---
 
 Hong Kong Exchanges and Clearing Limited (HKEX) is not just an exchange -- it is also a listed company, and a highly profitable one at that. Beyond its strong profitability, HKEX is also remarkably generous with its dividends.

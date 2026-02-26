@@ -6,7 +6,8 @@ slug: "巴菲特给非专业投资者的投资建议定投指数基金"
 categories: ["巴芒思想"]
 tags: ["巴菲特", "指数基金"]
 summary: ""
-toc: true
+ShowToc: true
+TocOpen: false
 ---
 
 ## 从Vanguard标普500指数基金说起
