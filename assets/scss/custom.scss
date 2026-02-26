@@ -36,7 +36,7 @@
     .lang-links {
         display: inline-flex;
         align-items: center;
-        gap: 6px;
+        gap: 0;
         font-size: inherit;
     }
 
@@ -44,6 +44,7 @@
         color: var(--body-text-color);
         opacity: 0.3;
         user-select: none;
+        margin: 0 6px;
     }
 
     .lang-current {
@@ -63,10 +64,15 @@
     }
 }
 
-/* --- Article meta row: word count style --- */
+/* --- Article meta row: icon size --- */
 .article-time > div {
     svg {
         width: 18px;
         height: 18px;
     }
+}
+
+/* --- Hide site footer (white bar at bottom) --- */
+.site-footer {
+    display: none;
 }

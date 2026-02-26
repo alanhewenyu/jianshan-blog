@@ -30,6 +30,18 @@ languages:
         subtitle: "价值投资，知行合一"
     menu:
       main:
+        - identifier: home
+          name: "首页"
+          url: /
+          weight: 10
+          params:
+            icon: home
+        - identifier: posts
+          name: "文章"
+          url: /posts/
+          weight: 20
+          params:
+            icon: archives
         - identifier: valuation
           name: "估值工具"
           url: "https://valux-dcf.streamlit.app/"
@@ -48,6 +60,11 @@ languages:
           url: "mailto:alanhe@icloud.com"
           params:
             icon: messages
+        - identifier: wechat
+          name: "公众号"
+          url: "/wechat/"
+          params:
+            icon: wechat
         - identifier: rss
           name: "RSS"
           url: "index.xml"
@@ -67,6 +84,18 @@ languages:
         subtitle: "Value investing, unity of knowledge and action"
     menu:
       main:
+        - identifier: home
+          name: "Home"
+          url: /en/
+          weight: 10
+          params:
+            icon: home
+        - identifier: posts
+          name: "Posts"
+          url: /en/posts/
+          weight: 20
+          params:
+            icon: archives
         - identifier: valuation
           name: "Valuation Tool"
           url: "https://valux-dcf.streamlit.app/"
@@ -85,6 +114,11 @@ languages:
           url: "mailto:alanhe@icloud.com"
           params:
             icon: messages
+        - identifier: wechat
+          name: "公众号"
+          url: "/wechat/"
+          params:
+            icon: wechat
         - identifier: rss
           name: "RSS"
           url: "index.xml"

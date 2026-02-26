@@ -25,11 +25,11 @@ Writing for me is a way to document and distill my investment insights, business
 
 ### Core Philosophy
 
-> DCF (Discounted Cash Flow) is the first principle of value investing.
+> **DCF (Discounted Cash Flow) is the first principle of value investing.**
 
 The intrinsic value of a company equals the sum of all its future free cash flows discounted to the present. This is not merely a valuation formula, but a way of thinking about business — it forces us to return to the most fundamental questions: How much free cash flow can this company generate? For how long? And with what degree of certainty?
 
-> Value investing, unity of knowledge and action.
+> **Being roughly right is better than being precisely wrong.**
 
 We do not pursue valuations precise to a specific number, but rather seek a deep understanding of business fundamentals and market expectations. The value of DCF as a tool lies in framing a roughly correct range through reasonable assumptions, while also thinking in reverse — using the current stock price to uncover what core valuation variables the market is implicitly pricing in.
 
