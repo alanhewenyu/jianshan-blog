@@ -142,13 +142,9 @@ params:
     license:
       enabled: false
 
-  newsletter:
-    buttondownId: "alanhewenyu"
-
   widgets:
     homepage:
       - type: search
-      - type: subscribe
       - type: archives
         params:
           limit: 5
