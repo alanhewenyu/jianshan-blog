@@ -5,7 +5,7 @@ draft: false
 slug: "企业的使命与差异化发展策略"
 categories: ["Business Analysis"]
 tags: ["Pinduoduo", "AI", "Consumer"]
-summary: ""
+summary: "Argues that a company's mission is to serve customer needs rather than pure profit, analyzing how differentiation strategies — not price wars — build sustainable business models and competitive advantages."
 ---
 
 The fundamental mission of a business is to provide products or services to society. Whether a product or service is viable depends on whether there is genuine market demand for it.

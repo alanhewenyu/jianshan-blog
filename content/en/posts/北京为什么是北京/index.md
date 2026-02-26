@@ -5,7 +5,7 @@ draft: false
 slug: "北京为什么是北京"
 categories: ["Life Reflections"]
 tags: ["Beijing", "History", "Geography"]
-summary: ""
+summary: "Traces why Beijing became China's political center for over 800 years, from water geography and strategic positioning to the Jin Dynasty capital, Yuan Dynasty water engineering, and the Yongle Emperor's relocation."
 ---
 
 During the Spring Festival holiday, many friends came to visit Beijing. But if you only see the Forbidden City and the Great Wall without understanding why this city has been China's political center for over 800 years, you're missing half the story.

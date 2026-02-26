@@ -5,7 +5,7 @@ draft: false
 slug: "价值投资和公司估值学习进阶指南"
 categories: ["Company Valuation"]
 tags: ["DCF", "Value Investing", "Buffett", "Financial Statements", "Valuation"]
-summary: ""
+summary: "A curated reading list for advancing in value investing and company valuation, featuring Buffett's shareholder letters, Graham's The Intelligent Investor, and a structured learning path."
 ---
 
 Today I've put together an advanced reading list for understanding value investing philosophy and systematically learning company valuation. Whether you work in finance or investing, these books can provide valuable guidance for your work and practice.

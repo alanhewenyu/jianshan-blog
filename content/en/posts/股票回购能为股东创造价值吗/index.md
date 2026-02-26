@@ -5,7 +5,7 @@ draft: false
 slug: "股票回购能为股东创造价值吗"
 categories: ["Company Valuation"]
 tags: ["DCF", "Value Investing", "Buffett", "Valuation", "Tencent", "Alibaba", "Meituan", "Hong Kong", "A-Shares", "P/E Ratio"]
-summary: ""
+summary: "Examines whether share buybacks truly create shareholder value using Tencent, Alibaba, and Meituan as case studies, analyzing the impact on EPS and market pricing logic."
 ---
 
 According to Wind data, during the first half of this year, 1,645 A-share listed companies repurchased a combined total of approximately RMB 99.3 billion in stock, nearly triple the amount over the same period last year. Since July, the enthusiasm for buybacks among listed companies has continued to surge. As of July 16, 157 listed companies had announced new buyback plans.

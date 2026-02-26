@@ -5,7 +5,7 @@ draft: false
 slug: "公司估值自由现金流fcff"
 categories: ["Company Valuation"]
 tags: ["DCF", "Value Investing", "ROIC", "Buffett", "Financial Statements", "Valuation", "WACC"]
-summary: ""
+summary: "Details how to calculate free cash flow to the firm (FCFF), from after-tax operating profit (NOPAT) through reinvestment deductions, integrating EBIT, effective tax rate, and WACC."
 ---
 
 As discussed in a previous article, a company's free cash flow to the firm (FCFF) is the residual amount after deducting the capital investment (reinvestment) required to maintain and grow the business from net operating profit after tax (NOPAT).

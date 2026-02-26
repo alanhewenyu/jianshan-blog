@@ -5,7 +5,7 @@ draft: false
 slug: "香港的由来及人口和经济变迁"
 categories: ["Business Analysis"]
 tags: ["Hong Kong", "RMB"]
-summary: ""
+summary: "Traces Hong Kong's territorial formation from Hong Kong Island, Kowloon, and the New Territories through cession and lease, reviewing population migration and economic development over a century of colonial history."
 ---
 
 ## **There Is a "Hong Kong" Within Hong Kong**

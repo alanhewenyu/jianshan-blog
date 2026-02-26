@@ -5,7 +5,7 @@ draft: false
 slug: "港股通人民币交易柜台的影响与前景"
 categories: ["Business Analysis"]
 tags: ["DCF", "Valuation", "Index Funds", "Tencent", "Meituan", "Hong Kong", "A-shares", "RMB", "P/E Ratio"]
-summary: ""
+summary: "Explains the significance of adding RMB trading counters to Stock Connect, analyzes the HKD-RMB dual counter mechanism, and discusses prospects for reducing FX costs and advancing RMB internationalization."
 ---
 
 On April 19, the China Securities Regulatory Commission (CSRC) announced five measures to optimize the Shanghai-Shenzhen-Hong Kong Stock Connect mechanism, including relaxing the eligibility requirements for exchange-traded funds (ETFs) under Stock Connect, incorporating Real Estate Investment Trusts (REITs) into Stock Connect, supporting the inclusion of RMB trading counters in Stock Connect's southbound channel, optimizing the Mutual Recognition of Funds arrangement, and supporting leading mainland enterprises in listing in Hong Kong. Among these, the inclusion of RMB trading counters in the southbound Stock Connect is by far the most significant.

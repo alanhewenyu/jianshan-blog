@@ -5,7 +5,7 @@ draft: false
 slug: "美团稳了一季报分析及dcf估值"
 categories: ["Company Valuation"]
 tags: ["DCF", "Value Investing", "Financial Statements", "Valuation", "WACC", "Tencent", "Meituan", "Hong Kong", "RMB", "Consumer"]
-summary: ""
+summary: "Deep analysis of Meituan's Q1 2024 results showing core local commerce margin improving to 17.8% QoQ, suggesting Douyin's competitive threat was lower than expected, with DCF-based valuation estimate."
 ---
 
 Since last December, Meituan's stock price has been on a roller coaster ride, tracing a V-shaped trajectory.

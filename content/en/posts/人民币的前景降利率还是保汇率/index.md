@@ -5,7 +5,7 @@ draft: false
 slug: "人民币的前景降利率还是保汇率"
 categories: ["Business Analysis"]
 tags: ["Hong Kong", "Renminbi", "Consumption"]
-summary: ""
+summary: "Analyzes the RMB outlook through interest rate parity theory, using the yen depreciation as reference, examining how the China-U.S. rate differential and PBOC's exchange rate management mechanism shape policy trade-offs."
 ---
 
 ## Factors That Determine Exchange Rates

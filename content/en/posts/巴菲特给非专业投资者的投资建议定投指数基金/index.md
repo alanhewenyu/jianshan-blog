@@ -5,7 +5,7 @@ draft: false
 slug: "巴菲特给非专业投资者的投资建议定投指数基金"
 categories: ["Buffett & Munger Philosophy"]
 tags: ["Buffett", "Index Funds"]
-summary: ""
+summary: "Explains why Buffett recommends S&P 500 index fund investing for non-professional investors, tracing from Vanguard's founding to Buffett's estate investment instructions and the long-term edge of low-cost index funds."
 ---
 
 ## Starting with the Vanguard S&P 500 Index Fund

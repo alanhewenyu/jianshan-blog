@@ -5,7 +5,7 @@ draft: false
 slug: "被遗忘的角落b股市场现状与投资价值"
 categories: ["Business Analysis"]
 tags: ["Valuation", "Hong Kong", "A-Shares", "B-Shares", "RMB", "P/E Ratio", "Consumer"]
-summary: ""
+summary: "Comprehensive overview of China's B-share market covering 74 dual-listed companies' industry distribution and discount levels, analyzing the deep B-share discount to A-shares and potential investment value."
 ---
 
 China's stock market is perhaps the most fragmented in the world. Not only do we have a large number of companies dual-listed on both A-shares and H-shares, but there are also quite a few companies dual-listed on A-shares and B-shares.

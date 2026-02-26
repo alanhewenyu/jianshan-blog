@@ -5,7 +5,7 @@ draft: false
 slug: "巴菲特的估值逻辑股票的内在价值与模糊的正确"
 categories: ["Buffett & Munger Philosophy"]
 tags: ["DCF", "Value Investing", "Buffett", "Financial Statements", "Valuation", "P/E Ratio"]
-summary: ""
+summary: "Decodes Buffett's core valuation logic of intrinsic value and approximate correctness, revealing how he uses the DCF framework to estimate business value with simple yet effective methods."
 ---
 
 ## Intrinsic Value

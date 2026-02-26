@@ -5,7 +5,7 @@ draft: false
 slug: "buy-what-you-know消费行业是最常青的投资"
 categories: ["Business Analysis"]
 tags: ["Buffett", "Financial Statements", "Hong Kong", "A-shares", "Consumer"]
-summary: ""
+summary: "Explores Peter Lynch's investment philosophy to analyze why the consumer sector, with its high ROE and brand moats, remains an evergreen track for long-term investing, with A-share ROE comparison across industries."
 ---
 
 ## Buy What You Know

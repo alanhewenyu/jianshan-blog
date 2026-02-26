@@ -5,7 +5,7 @@ draft: false
 slug: "谈谈跨越式发展"
 categories: ["Life Reflections"]
 tags: ["Meituan"]
-summary: ""
+summary: "Starting from WeChat replacing email for work communication, explores China's leapfrog development phenomenon in mobile payments, mobile internet, and new energy vehicles — skipping intermediate stages to achieve catch-up innovation."
 ---
 
 WeChat has become an integral part of many people's work lives. When collaboration is needed, you can instantly create a group chat -- it's undeniably convenient. But this convenience comes with a clear downside: the boundary between work and personal life becomes blurred. Coming home after work, opening WeChat, and seeing work-related messages can be a source of anxiety.

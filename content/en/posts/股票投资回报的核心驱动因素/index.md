@@ -5,7 +5,7 @@ draft: false
 slug: "股票投资回报的核心驱动因素"
 categories: ["Company Valuation"]
 tags: ["DCF", "Value Investing", "ROIC", "Buffett", "Valuation", "P/E Ratio"]
-summary: ""
+summary: "Deconstructs the fundamental drivers of stock investment returns, explaining the relationship between intrinsic value and stock price, and breaking down revenue growth, margins, and ROIC as core financial metrics."
 ---
 
 ## Equity Investment Returns and Intrinsic Value

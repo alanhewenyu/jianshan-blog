@@ -5,7 +5,7 @@ draft: false
 slug: "增长率资本回报率roic与自由现金流fcff的关系"
 categories: ["Company Valuation"]
 tags: ["DCF", "Value Investing", "ROIC", "Valuation", "WACC", "P/E Ratio"]
-summary: ""
+summary: "Systematically explains the intrinsic relationship among growth rate, ROIC, and FCFF, revealing why companies with identical growth rates can have vastly different intrinsic values."
 ---
 
 In previous articles, we discussed company growth, return on invested capital (ROIC), and how to calculate free cash flow to the firm (FCFF) as separate topics. In this article, we will systematically explore the relationships among these three concepts.

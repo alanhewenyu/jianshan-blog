@@ -5,7 +5,7 @@ draft: false
 slug: "如何计算和使用资本回报率-roic"
 categories: ["Company Valuation"]
 tags: ["ROIC", "Financial Statements", "Valuation", "WACC"]
-summary: ""
+summary: "Details ROIC calculation methods and practical applications, contrasts ROIC with ROE to show how it eliminates capital structure bias, and explores its link to free cash flow and economic value added."
 ---
 
 ## How to Calculate Return on Invested Capital (ROIC)

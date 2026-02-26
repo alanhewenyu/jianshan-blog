@@ -5,7 +5,7 @@ draft: false
 slug: "透过财报看香港交易所"
 categories: ["Financial Statement Analysis"]
 tags: ["DCF", "Value Investing", "Financial Statements", "Valuation", "Hong Kong", "RMB"]
-summary: ""
+summary: "Deep dive into HKEX financials: EBITDA margin consistently above 70%, ROE stable at 20%+, and 90% dividend payout ratio, analyzing revenue composition and profit model."
 ---
 
 Hong Kong Exchanges and Clearing Limited (HKEX) is not just an exchange -- it is also a listed company, and a highly profitable one at that. Beyond its strong profitability, HKEX is also remarkably generous with its dividends.

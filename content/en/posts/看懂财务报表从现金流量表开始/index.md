@@ -5,7 +5,7 @@ draft: false
 slug: "看懂财务报表从现金流量表开始"
 categories: ["Financial Statement Analysis"]
 tags: ["Value Investing", "Financial Statements", "Valuation", "IFRS"]
-summary: ""
+summary: "Introduces financial statement analysis starting from the cash flow statement, covering operating, investing, and financing activities to help non-professionals quickly understand accounting language and basic financial analysis."
 ---
 
 Between value investing and company valuation, there is a critical bridge: financial statements.

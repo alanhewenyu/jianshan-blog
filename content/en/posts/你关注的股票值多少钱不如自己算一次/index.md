@@ -5,7 +5,7 @@ draft: false
 slug: "你关注的股票值多少钱不如自己算一次"
 categories: ["Company Valuation"]
 tags: ["DCF", "AI", "Claude", "Value Investing", "Valuation", "ValuX"]
-summary: ""
+summary: "Introduces ValuX, an AI-powered interactive DCF valuation tool that combines standardized data processing with AI parameter estimation to help investors calculate intrinsic stock value."
 ---
 
 During the Spring Festival holiday, I've been using Claude extensively. One clear takeaway: large language models have evolved beyond chatbots into genuine productivity tools. Strong comprehension, high-quality output, and many tasks completed in a single pass — far more efficient than the back-and-forth iterations typical in real-world work.

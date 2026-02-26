@@ -5,7 +5,7 @@ draft: false
 slug: "公司估值加权平均资本成本wacc"
 categories: ["Company Valuation"]
 tags: ["DCF", "Valuation", "WACC"]
-summary: ""
+summary: "Details how to calculate the discount rate WACC in DCF valuation, analyzing industry effects on cost of capital, methods for determining cost of equity, and the debt-equity weighting logic."
 ---
 
 When discounting a company's free cash flow to the firm (FCFF), the discount rate used is the Weighted Average Cost of Capital (WACC). Since a company's cost of capital comprises both equity and debt, the weighting reflects the company's capital structure.

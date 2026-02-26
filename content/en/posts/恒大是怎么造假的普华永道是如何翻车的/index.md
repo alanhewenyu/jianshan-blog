@@ -5,7 +5,7 @@ draft: false
 slug: "恒大是怎么造假的普华永道是如何翻车的"
 categories: ["Business Analysis"]
 tags: ["Financial Statements", "Hong Kong", "RMB", "PwC", "Evergrande"]
-summary: ""
+summary: "Dissects Evergrande's accounting fraud — premature revenue recognition inflating revenue by hundreds of billions — and examines why PwC as auditor failed to detect the issues, from both accounting policy and audit procedure perspectives."
 ---
 
 ## How Evergrande Falsified Its Financials

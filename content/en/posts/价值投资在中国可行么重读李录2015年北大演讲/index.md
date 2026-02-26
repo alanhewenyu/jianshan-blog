@@ -5,7 +5,7 @@ draft: false
 slug: "价值投资在中国可行么重读李录2015年北大演讲"
 categories: ["Business Analysis"]
 tags: ["Value Investing", "Buffett", "Munger"]
-summary: ""
+summary: "Revisits Li Lu's 2015 Peking University speech on his Civilization 3.0 theory and the outlook for value investing in China, addressing current investor doubts about its feasibility."
 ---
 
 ## About Li Lu
