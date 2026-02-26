@@ -1,0 +1,32 @@
+{{ if not (hasPrefix .RelPermalink "/en/") }}
+<script>
+(function() {
+  // Only redirect if user hasn't explicitly chosen Chinese
+  if (localStorage.getItem('lang-preference') === 'zh') return;
+
+  var lang = navigator.language || navigator.userLanguage || '';
+  if (!lang.toLowerCase().startsWith('zh')) {
+    // Redirect non-Chinese browsers to English version
+    var enPath = '/en' + window.location.pathname + window.location.search;
+    window.location.replace(enPath);
+  }
+})();
+</script>
+{{ end }}
+
+{{ if hasPrefix .RelPermalink "/en/" }}
+<script>
+// When user switches back to Chinese, remember their preference
+document.addEventListener('DOMContentLoaded', function() {
+  var zhLinks = document.querySelectorAll('a[hreflang="zh"], a.lang-switch a[href*="jianshan.co/"]');
+  // Find language switch links pointing to Chinese version
+  document.querySelectorAll('.lang-switch a').forEach(function(a) {
+    if (!a.href.includes('/en/') && !a.href.includes('/en"')) {
+      a.addEventListener('click', function() {
+        localStorage.setItem('lang-preference', 'zh');
+      });
+    }
+  });
+});
+</script>
+{{ end }}
