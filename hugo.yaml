@@ -41,7 +41,7 @@ languages:
           url: "https://valux-dcf.streamlit.app/"
           weight: 40
           params:
-            icon: chart-line
+            icon: calculator
             newTab: true
       social:
         - identifier: github
@@ -89,7 +89,7 @@ languages:
           url: "https://valux-dcf.streamlit.app/"
           weight: 40
           params:
-            icon: chart-line
+            icon: calculator
             newTab: true
       social:
         - identifier: github
