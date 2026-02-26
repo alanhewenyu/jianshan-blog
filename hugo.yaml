@@ -36,9 +36,9 @@ languages:
       description: "价值投资、商业分析"
       author: "沧浪"
       homeInfoParams:
-        Title: "价值投资，知行合一"
+        Title: "你好，我是沧浪，欢迎来到我的博客空间"
         Content: >
-          专注于公司估值、商业分析与AI在投资中的应用。
+          价值投资，知行合一。专注于公司估值、商业分析与AI在投资中的应用。
       socialIcons:
         - name: github
           url: "https://github.com/alanhewenyu"
@@ -84,9 +84,9 @@ languages:
       description: "Value Investing & Business Analysis"
       author: "沧浪"
       homeInfoParams:
-        Title: "Value Investing, Unity of Knowledge and Action"
+        Title: "Hi, I'm Canglang. Welcome to my blog"
         Content: >
-          Focused on company valuation, business analysis, and the application of AI in investing.
+          Value investing, unity of knowledge and action. Focused on company valuation, business analysis, and the application of AI in investing.
       socialIcons:
         - name: github
           url: "https://github.com/alanhewenyu"
@@ -153,9 +153,9 @@ params:
 
   # Home page mode
   homeInfoParams:
-    Title: "价值投资，知行合一"
+    Title: "你好，我是沧浪，欢迎来到我的博客空间"
     Content: >
-      专注于公司估值、商业分析与AI在投资中的应用。
+      价值投资，知行合一。专注于公司估值、商业分析与AI在投资中的应用。
 
   # Search
   fuseOpts:
