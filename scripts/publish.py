@@ -357,6 +357,54 @@ def generate_tags(title, content):
 
 
 # ==================
+# AI Summary Generation
+# ==================
+
+def generate_summary(title, markdown_content):
+    """Generate a concise Chinese summary using Claude API.
+    Returns summary string, or empty string if unavailable.
+    """
+    try:
+        import anthropic
+    except ImportError:
+        return ""
+
+    api_key = os.environ.get("ANTHROPIC_API_KEY", "")
+    if not api_key:
+        return ""
+
+    print("  📝 Generating summary via Claude API...")
+
+    client = anthropic.Anthropic(api_key=api_key)
+
+    prompt = f"""为以下中文博客文章生成一句话摘要（summary），用于SEO和首页展示。
+
+要求：
+1. 一句话，40-80个中文字符
+2. 概括文章核心内容和价值
+3. 使用客观描述性语言，不要用"本文"开头
+4. 直接输出摘要，不要加引号或其他说明
+
+文章标题: {title}
+
+文章内容:
+{markdown_content[:3000]}"""
+
+    try:
+        message = client.messages.create(
+            model="claude-sonnet-4-20250514",
+            max_tokens=200,
+            messages=[{"role": "user", "content": prompt}],
+        )
+        summary = message.content[0].text.strip().strip('"').strip("'")
+        print(f"  ✅ Summary: {summary}")
+        return summary
+    except Exception as e:
+        print(f"  ⚠️  Summary generation failed: {e}")
+        return ""
+
+
+# ==================
 # Translation (Claude API)
 # ==================
 
@@ -411,14 +459,16 @@ def translate_article(title, markdown_content, category_zh, tags_zh):
 
 Rules:
 1. Translate the title and the full article body.
-2. Keep all Markdown formatting (headings, lists, bold, links, images) intact.
-3. Do NOT translate image filenames in ![alt](filename) — keep the filenames exactly as-is.
-4. Maintain the same paragraph structure and tone.
-5. For proper nouns (company names, people), use their common English names.
-6. Output ONLY the translation, no explanations.
+2. Write a one-sentence English summary (50-100 characters) for SEO.
+3. Keep all Markdown formatting (headings, lists, bold, links, images) intact.
+4. Do NOT translate image filenames in ![alt](filename) — keep the filenames exactly as-is.
+5. Maintain the same paragraph structure and tone.
+6. For proper nouns (company names, people), use their common English names.
+7. Output ONLY the translation, no explanations.
 
 Format your response as:
 TITLE: <translated title>
+SUMMARY: <one-sentence English summary>
 ---
 <translated article body in Markdown>
 
@@ -440,11 +490,14 @@ Chinese Article:
         # Parse response
         lines = response_text.split("\n")
         en_title = ""
+        en_summary = ""
         body_start = 0
 
         for i, line in enumerate(lines):
             if line.startswith("TITLE:"):
                 en_title = line[6:].strip().strip('"')
+            elif line.startswith("SUMMARY:"):
+                en_summary = line[8:].strip().strip('"')
             elif line.strip() == "---":
                 body_start = i + 1
                 break
@@ -457,7 +510,7 @@ Chinese Article:
             en_content = response_text
 
         print(f"  ✅ Translation complete: \"{en_title}\"")
-        return en_title, en_content, en_category, en_tags
+        return en_title, en_content, en_category, en_tags, en_summary
 
     except Exception as e:
         print(f"  ⚠️  Translation failed: {e}")
@@ -468,16 +521,17 @@ Chinese Article:
 # Hugo Page Bundle Creator
 # ==================
 
-def create_zh_bundle(slug, title, date, category, content, dest_dir, dry_run=False):
+def create_zh_bundle(slug, title, date, category, content, dest_dir, summary="", dry_run=False):
     """Create the Chinese page bundle."""
     bundle_dir = dest_dir / slug
 
-    # Front matter (minimal, matching existing zh posts)
+    # Front matter (matching existing zh posts)
+    summary_line = f'\nsummary: "{summary}"' if summary else ""
     front_matter = f"""---
 title: "{title}"
 date: {date}
 categories:
-  - {category}
+  - {category}{summary_line}
 ---"""
 
     full_content = front_matter + "\n\n" + content + "\n"
@@ -496,7 +550,7 @@ categories:
     return bundle_dir
 
 
-def create_en_bundle(slug, title, date, category, tags, content, dest_dir, dry_run=False):
+def create_en_bundle(slug, title, date, category, tags, content, dest_dir, summary="", dry_run=False):
     """Create the English page bundle."""
     bundle_dir = dest_dir / slug
 
@@ -508,7 +562,7 @@ draft: false
 slug: "{slug}"
 categories: ["{category}"]
 tags: [{tags_str}]
-summary: ""
+summary: "{summary}"
 ---"""
 
     full_content = front_matter + "\n\n" + content + "\n"
@@ -645,19 +699,23 @@ def main():
     tags_zh = generate_tags(title, markdown_content)
     print(f"   Auto-detected tags: {tags_zh}")
 
-    # Step 5: Create Chinese page bundle
-    print("\n🇨🇳 Creating Chinese article...")
-    create_zh_bundle(slug, title, date, args.category, markdown_content, ZH_POSTS_DIR, dry_run=args.dry_run)
+    # Step 5: Generate AI summary
+    print("\n📝 Generating summary...")
+    zh_summary = generate_summary(title, markdown_content)
 
-    # Step 6: Translate and create English page bundle
+    # Step 6: Create Chinese page bundle
+    print("\n🇨🇳 Creating Chinese article...")
+    create_zh_bundle(slug, title, date, args.category, markdown_content, ZH_POSTS_DIR, summary=zh_summary, dry_run=args.dry_run)
+
+    # Step 7: Translate and create English page bundle
     if args.no_translate:
         print("\n⏭️  Skipping English translation")
     else:
         print("\n🇬🇧 Creating English article...")
         result = translate_article(title, markdown_content, args.category, tags_zh)
         if result:
-            en_title, en_content, en_category, en_tags = result
-            create_en_bundle(slug, en_title, date, en_category, en_tags, en_content, EN_POSTS_DIR, dry_run=args.dry_run)
+            en_title, en_content, en_category, en_tags, en_summary = result
+            create_en_bundle(slug, en_title, date, en_category, en_tags, en_content, EN_POSTS_DIR, summary=en_summary, dry_run=args.dry_run)
             copy_images_to_en(zh_bundle_dir, EN_POSTS_DIR / slug, dry_run=args.dry_run)
         else:
             print("  ⚠️  Skipped English version (translation unavailable)")
