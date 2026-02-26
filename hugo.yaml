@@ -36,7 +36,7 @@ languages:
       description: "价值投资、商业分析"
       author: "沧浪"
       homeInfoParams:
-        Title: "你好，我是沧浪，欢迎来到我的博客空间"
+        Title: "你好，欢迎来到我的博客空间"
         Content: >
           价值投资，知行合一。专注于公司估值、商业分析与AI在投资中的应用。
       socialIcons:
@@ -84,7 +84,7 @@ languages:
       description: "Value Investing & Business Analysis"
       author: "沧浪"
       homeInfoParams:
-        Title: "Hi, I'm Canglang. Welcome to my blog"
+        Title: "Hello, welcome to my blog"
         Content: >
           Value investing, unity of knowledge and action. Focused on company valuation, business analysis, and the application of AI in investing.
       socialIcons:
@@ -153,7 +153,7 @@ params:
 
   # Home page mode
   homeInfoParams:
-    Title: "你好，我是沧浪，欢迎来到我的博客空间"
+    Title: "你好，欢迎来到我的博客空间"
     Content: >
       价值投资，知行合一。专注于公司估值、商业分析与AI在投资中的应用。
 
