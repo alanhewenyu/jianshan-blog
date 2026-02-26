@@ -21,16 +21,16 @@
     }
 }
 
-/* --- Language switcher: inline links instead of dropdown --- */
+/* --- Language switcher: compact inline links --- */
 
 #i18n-switch {
-    display: inline-flex;
+    display: inline-flex !important;
     align-items: center;
-    gap: var(--menu-icon-separation);
+    gap: 10px !important;
     color: var(--body-text-color);
 
     select {
-        display: none; /* hide original dropdown */
+        display: none;
     }
 
     .lang-links {
@@ -40,11 +40,19 @@
         font-size: inherit;
     }
 
+    .lang-sep,
+    .lang-current,
+    .lang-link {
+        display: inline !important;
+        width: auto !important;
+        flex: none !important;
+    }
+
     .lang-sep {
         color: var(--body-text-color);
         opacity: 0.3;
         user-select: none;
-        margin: 0 6px;
+        margin: 0 5px;
     }
 
     .lang-current {
@@ -72,7 +80,46 @@
     }
 }
 
-/* --- Hide site footer (white bar at bottom) --- */
-.site-footer {
-    display: none;
+/* --- Hide site footer & disqus placeholder --- */
+.site-footer,
+.disqus-container {
+    display: none !important;
+}
+
+/* --- Category / Archive / Taxonomy compact list --- */
+
+/* Reduce card padding in taxonomy lists */
+.section-term .article-list article,
+.tax-term .article-list article,
+.archives .article-list article {
+    .article-details {
+        padding: 12px 20px;
+        gap: 4px;
+    }
+
+    .article-title {
+        font-size: 1.6rem;
+    }
+
+    .article-time {
+        gap: 10px;
+    }
+}
+
+/* Compact list style used by archives/categories */
+.article-list--compact {
+    article {
+        & > a {
+            padding: 12px 16px;
+            gap: 6px;
+        }
+
+        .article-title {
+            font-size: 1.5rem;
+        }
+
+        .article-time {
+            font-size: 1.2rem;
+        }
+    }
 }

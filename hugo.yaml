@@ -36,12 +36,6 @@ languages:
           weight: 10
           params:
             icon: home
-        - identifier: posts
-          name: "文章"
-          url: /posts/
-          weight: 20
-          params:
-            icon: archives
         - identifier: valuation
           name: "估值工具"
           url: "https://valux-dcf.streamlit.app/"
@@ -90,12 +84,6 @@ languages:
           weight: 10
           params:
             icon: home
-        - identifier: posts
-          name: "Posts"
-          url: /en/posts/
-          weight: 20
-          params:
-            icon: archives
         - identifier: valuation
           name: "Valuation Tool"
           url: "https://valux-dcf.streamlit.app/"
