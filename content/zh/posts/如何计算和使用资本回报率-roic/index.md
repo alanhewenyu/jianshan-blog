@@ -5,7 +5,7 @@ draft: false
 slug: "如何计算和使用资本回报率-roic"
 categories: ["公司估值"]
 tags: ["ROIC", "财务报表", "估值", "WACC"]
-summary: ""
+summary: "详解资本回报率ROIC的计算方法与实际应用，对比ROE阐述ROIC如何消除资本结构差异，并探讨ROIC与自由现金流、经济附加值的关系。"
 ---
 
 ## 如何计算资本回报率（ROIC）

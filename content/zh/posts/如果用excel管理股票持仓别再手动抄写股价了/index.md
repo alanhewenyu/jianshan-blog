@@ -3,6 +3,7 @@ title: "如果用Excel管理股票持仓，别再手动抄写股价了"
 date: 2026-02-14
 categories:
   - 公司估值
+summary: "用Excel管理股票持仓却苦于手动抄写股价？本文提供免费解决方案：通过VBA宏调用Yahoo Finance API，一键自动更新全球股价数据。"
 ---
 
 ## 要解决的问题

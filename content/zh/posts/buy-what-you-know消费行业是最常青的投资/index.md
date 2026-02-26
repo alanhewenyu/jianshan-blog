@@ -5,7 +5,7 @@ draft: false
 slug: "buy-what-you-know消费行业是最常青的投资"
 categories: ["商业分析"]
 tags: ["巴菲特", "财务报表", "香港", "A股", "消费"]
-summary: ""
+summary: "从彼得·林奇投资理念出发，分析消费行业为何具有高ROE和品牌护城河，是长期投资的常青赛道，附A股各行业净资产回报率对比。"
 ---
 
 ## Buy what you know

@@ -5,7 +5,7 @@ draft: false
 slug: "再谈相对估值-市盈率pe与企业价值倍数ev-ebitda"
 categories: ["公司估值"]
 tags: ["市盈率", "估值", "ROIC"]
-summary: ""
+summary: "深度剖析市盈率PE与企业价值倍数EV/EBITDA的局限性，从规模效应、非经常性损益等角度揭示为何短期收益指标未必能反映公司未来价值。"
 ---
 
 市盈率（P/E）和企业价值倍数（EV/EBITDA）是投资者最常用的相对估值倍数。从分子端看，不管是P和EV，反映的都是企业未来相关现金流的现值。然而，分母端却是公司最近的收益（P/E的E）或近似现金流（EV/EBITDA的EBITDA）。
