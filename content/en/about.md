@@ -10,8 +10,6 @@ ShowWordCount: false
 
 ## About Me
 
-Hello, welcome to my blog!
-
 In an era dominated by short videos and algorithms, knowledge is increasingly fragmented, independent thinking is trapped in filter bubbles, and it has become ever harder to sit down and read or write with focus. Yet the depth of thought and lasting value that long-form writing carries simply cannot be replaced by bite-sized content.
 
 Writing for me is a way to document and distill my investment insights, business thinking, and professional knowledge — and I hope it also becomes a way to connect and exchange ideas with you.
