@@ -41,7 +41,7 @@ languages:
           url: "https://valux-dcf.streamlit.app/"
           weight: 40
           params:
-            icon: infinity
+            icon: chart-line
             newTab: true
       social:
         - identifier: github
@@ -53,7 +53,7 @@ languages:
           name: "Email"
           url: "mailto:alanhe@icloud.com"
           params:
-            icon: messages
+            icon: mail
         - identifier: wechat
           name: "公众号"
           url: "/wechat/"
@@ -89,7 +89,7 @@ languages:
           url: "https://valux-dcf.streamlit.app/"
           weight: 40
           params:
-            icon: infinity
+            icon: chart-line
             newTab: true
       social:
         - identifier: github
@@ -101,7 +101,7 @@ languages:
           name: "Email"
           url: "mailto:alanhe@icloud.com"
           params:
-            icon: messages
+            icon: mail
         - identifier: wechat
           name: "公众号"
           url: "/wechat/"

@@ -45,6 +45,11 @@ We have developed an open-source DCF valuation tool — [ValuX](https://valux-dc
 
 ### Contact
 
-- WeChat Official Account: **见山笔记**
+#### WeChat Official Account: Jianshan Notes (见山笔记)
+
+Scan to follow and receive the latest article updates:
+
+<img src="/images/wechat-qrcode.jpg" alt="Jianshan Notes WeChat QR Code" style="max-width: 250px;">
+
 - Email: alanhe@icloud.com
 - GitHub: [github.com/alanhewenyu](https://github.com/alanhewenyu)
