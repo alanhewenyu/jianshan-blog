@@ -103,6 +103,67 @@
     }
 }
 
+/* --- Share buttons --- */
+.article-share {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid var(--card-separator-color, #eee);
+
+    .share-title {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: var(--body-text-color);
+        margin: 0 0 12px 0;
+        opacity: 0.7;
+    }
+
+    .share-buttons {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .share-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: var(--card-background, #fff);
+        border: 1px solid var(--card-separator-color, #e0e0e0);
+        color: var(--body-text-color);
+        opacity: 0.65;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        text-decoration: none;
+
+        &:hover {
+            opacity: 1;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        svg {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    .share-twitter:hover { color: #000; border-color: #000; }
+    .share-facebook:hover { color: #1877f2; border-color: #1877f2; }
+    .share-linkedin:hover { color: #0a66c2; border-color: #0a66c2; }
+    .share-weibo:hover { color: #e6162d; border-color: #e6162d; }
+    .share-email:hover { color: #ea4335; border-color: #ea4335; }
+    .share-copy:hover { color: var(--accent-color, #3273dc); border-color: var(--accent-color, #3273dc); }
+
+    .share-copy.copied {
+        color: #22c55e;
+        border-color: #22c55e;
+        opacity: 1;
+    }
+}
+
 /* --- Article meta row: icon size --- */
 .article-time > div {
     svg {
