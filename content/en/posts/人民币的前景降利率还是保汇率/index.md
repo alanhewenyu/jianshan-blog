@@ -6,8 +6,6 @@ slug: "人民币的前景降利率还是保汇率"
 categories: ["Business Analysis"]
 tags: ["Hong Kong", "Renminbi", "Consumption"]
 summary: ""
-ShowToc: true
-TocOpen: false
 ---
 
 ## Factors That Determine Exchange Rates

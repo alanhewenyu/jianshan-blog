@@ -1,6 +1,6 @@
 baseURL: "https://jianshan.co/"
 title: "见山笔记"
-theme: "PaperMod"
+theme: "hugo-theme-stack"
 paginate: 10
 defaultContentLanguage: zh
 defaultContentLanguageInSubdir: false
@@ -13,16 +13,6 @@ enableEmoji: true
 # CJK word count
 hasCJKLanguage: true
 
-minify:
-  disableXML: true
-  minifyOutput: true
-
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON  # Required for search
-
 # ==================
 # Multilingual
 # ==================
@@ -34,46 +24,28 @@ languages:
     title: "见山笔记"
     params:
       description: "价值投资、商业分析"
-      author: "沧浪"
-      homeInfoParams:
-        Title: "你好，欢迎来到我的博客空间"
-        Content: >
-          价值投资，知行合一。专注于公司估值、商业分析与AI在投资中的应用。
-      socialIcons:
-        - name: github
-          url: "https://github.com/alanhewenyu"
-        - name: email
-          url: "mailto:alanhe@icloud.com"
-        - name: wechat
-          url: "/wechat/"
-        - name: rss
-          url: "index.xml"
+      author:
+        name: "沧浪"
+      sidebar:
+        subtitle: "价值投资，知行合一"
     menu:
-      main:
-        - identifier: posts
-          name: "文章"
-          url: /posts/
-          weight: 10
-        - identifier: categories
-          name: "分类"
-          url: /categories/
-          weight: 20
-        - identifier: tags
-          name: "标签"
-          url: /tags/
-          weight: 30
-        - identifier: valuation
-          name: "估值工具"
-          url: "https://valux-dcf.streamlit.app/"
-          weight: 40
-        - identifier: search
-          name: "搜索"
-          url: /search/
-          weight: 50
-        - identifier: about
-          name: "关于"
-          url: /about/
-          weight: 60
+      main: []
+      social:
+        - identifier: github
+          name: "GitHub"
+          url: "https://github.com/alanhewenyu"
+          params:
+            icon: brand-github
+        - identifier: email
+          name: "Email"
+          url: "mailto:alanhe@icloud.com"
+          params:
+            icon: messages
+        - identifier: rss
+          name: "RSS"
+          url: "index.xml"
+          params:
+            icon: rss
 
   en:
     languageName: "English"
@@ -82,110 +54,77 @@ languages:
     title: "Jianshan Notes"
     params:
       description: "Value Investing & Business Analysis"
-      author: "沧浪"
-      homeInfoParams:
-        Title: "Hello, welcome to my blog"
-        Content: >
-          Value investing, unity of knowledge and action. Focused on company valuation, business analysis, and the application of AI in investing.
-      socialIcons:
-        - name: github
-          url: "https://github.com/alanhewenyu"
-        - name: email
-          url: "mailto:alanhe@icloud.com"
-        - name: wechat
-          url: "/wechat/"
-        - name: rss
-          url: "index.xml"
+      author:
+        name: "沧浪"
+      sidebar:
+        subtitle: "Value investing, unity of knowledge and action"
     menu:
-      main:
-        - identifier: posts
-          name: "Posts"
-          url: /en/posts/
-          weight: 10
-        - identifier: categories
-          name: "Categories"
-          url: /en/categories/
-          weight: 20
-        - identifier: tags
-          name: "Tags"
-          url: /en/tags/
-          weight: 30
-        - identifier: valuation
-          name: "Valuation Tool"
-          url: "https://valux-dcf.streamlit.app/"
-          weight: 40
-        - identifier: search
-          name: "Search"
-          url: /en/search/
-          weight: 50
-        - identifier: about
-          name: "About"
-          url: /en/about/
-          weight: 60
+      main: []
+      social:
+        - identifier: github
+          name: "GitHub"
+          url: "https://github.com/alanhewenyu"
+          params:
+            icon: brand-github
+        - identifier: email
+          name: "Email"
+          url: "mailto:alanhe@icloud.com"
+          params:
+            icon: messages
+        - identifier: rss
+          name: "RSS"
+          url: "index.xml"
+          params:
+            icon: rss
 
 # ==================
 # Theme Parameters
 # ==================
 params:
-  env: production
-  author: "沧浪"
+  mainSections:
+    - posts
+  featuredImageField: image
   description: "价值投资、商业分析"
-  keywords:
-    - 价值投资
-    - DCF
-    - 公司估值
-    - 商业分析
-    - AI投资
 
-  defaultTheme: auto  # auto/dark/light
-  ShowReadingTime: true
-  ShowWordCount: true
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: true
-  ShowCodeCopyButtons: true
-  ShowShareButtons: true
-  ShowToc: true
-  TocOpen: false
-  disableSpecial1stPost: false
-  disableScrollToTop: false
-  hidemeta: false
-  hideSummary: false
+  author:
+    name: "沧浪"
 
-  # Home page mode
-  homeInfoParams:
-    Title: "你好，欢迎来到我的博客空间"
-    Content: >
-      价值投资，知行合一。专注于公司估值、商业分析与AI在投资中的应用。
+  dateFormat:
+    published: "2006-01-02"
+    lastUpdated: "2006-01-02 15:04 MST"
 
-  # Search
-  fuseOpts:
-    isCaseSensitive: false
-    shouldSort: true
-    location: 0
-    distance: 1000
-    threshold: 0.4
-    minMatchCharLength: 0
-    keys:
-      - title
-      - permalink
-      - summary
-      - content
+  sidebar:
+    compact: false
+    emoji: ""
+    subtitle: "价值投资，知行合一"
 
-  # Profile mode (disabled, using homeInfo mode)
-  profileMode:
-    enabled: false
+  article:
+    headingAnchor: false
+    math: false
+    toc: true
+    readingTime: true
+    license:
+      enabled: false
 
-  # Cover image settings
-  cover:
-    hidden: false
-    hiddenInList: false
-    hiddenInSingle: false
+  widgets:
+    homepage:
+      - type: search
+      - type: archives
+        params:
+          limit: 5
+      - type: categories
+        params:
+          limit: 20
+    page:
+      - type: toc
 
-  # Edit link
-  editPost:
-    URL: ""
-    Text: ""
-    appendFilePath: false
+  colorScheme:
+    toggle: true
+    default: auto
+
+  defaultImage:
+    opengraph:
+      enabled: false
 
 markup:
   goldmark:
@@ -193,6 +132,12 @@ markup:
       unsafe: true
   highlight:
     noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    tabWidth: 4
 
 privacy:
   disqus:

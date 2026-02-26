@@ -6,8 +6,6 @@ slug: "公司估值加权平均资本成本wacc"
 categories: ["公司估值"]
 tags: ["DCF", "估值", "WACC"]
 summary: ""
-ShowToc: true
-TocOpen: false
 ---
 
 在对公司自由现金流（FCFF）进行折现时，折现率使用的是加权平均资本成本（WACC）。由于公司的资本成本包括权益和负债两部分，加权处理反映了公司的资本结构。

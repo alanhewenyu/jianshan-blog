@@ -1,11 +1,14 @@
 ---
 title: "关于"
-layout: "single"
+layout: "page"
 url: "/about/"
+slug: "about"
 summary: "关于见山笔记"
-ShowToc: false
-ShowReadingTime: false
-ShowWordCount: false
+menu:
+  main:
+    weight: -90
+    params:
+      icon: user
 ---
 
 ## 关于我

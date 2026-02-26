@@ -6,8 +6,6 @@ slug: "资本回报率roic与公司的竞争战略"
 categories: ["公司估值"]
 tags: ["ROIC", "巴菲特", "拼多多", "消费"]
 summary: ""
-ShowToc: true
-TocOpen: false
 ---
 
 之前文章说到，通过杜邦分析，资本回报率（ROIC）可以分解为经营利润率和资本周转率两个驱动变量。也就是如下公式：

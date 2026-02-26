@@ -6,8 +6,6 @@ slug: "ifrs-18利润表结构新变化助力财务分析和dcf估值"
 categories: ["Company Valuation"]
 tags: ["DCF", "Financial Statements", "Valuation", "Tencent", "Hong Kong", "A-shares", "IFRS"]
 summary: ""
-ShowToc: true
-TocOpen: false
 ---
 
 On April 9, 2024, the International Accounting Standards Board (IASB) issued IFRS 18 — Presentation and Disclosure in Financial Statements. This standard will replace IAS 1 — Presentation of Financial Statements and will become effective on January 1, 2027, with early adoption permitted.

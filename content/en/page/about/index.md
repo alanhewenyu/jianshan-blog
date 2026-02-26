@@ -1,11 +1,14 @@
 ---
 title: "About"
-layout: "single"
+layout: "page"
 url: "/en/about/"
+slug: "about"
 summary: "About Jianshan Notes"
-ShowToc: false
-ShowReadingTime: false
-ShowWordCount: false
+menu:
+  main:
+    weight: -90
+    params:
+      icon: user
 ---
 
 ## About Me

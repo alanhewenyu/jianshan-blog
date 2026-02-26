@@ -6,8 +6,6 @@ slug: "股票投资回报的核心驱动因素"
 categories: ["Company Valuation"]
 tags: ["DCF", "Value Investing", "ROIC", "Buffett", "Valuation", "P/E Ratio"]
 summary: ""
-ShowToc: true
-TocOpen: false
 ---
 
 ## Equity Investment Returns and Intrinsic Value

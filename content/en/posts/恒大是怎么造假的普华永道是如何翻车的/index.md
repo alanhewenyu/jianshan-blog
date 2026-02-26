@@ -6,8 +6,6 @@ slug: "恒大是怎么造假的普华永道是如何翻车的"
 categories: ["Business Analysis"]
 tags: ["Financial Statements", "Hong Kong", "RMB", "PwC", "Evergrande"]
 summary: ""
-ShowToc: true
-TocOpen: false
 ---
 
 ## How Evergrande Falsified Its Financials

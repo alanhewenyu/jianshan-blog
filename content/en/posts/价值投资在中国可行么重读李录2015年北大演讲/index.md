@@ -6,8 +6,6 @@ slug: "价值投资在中国可行么重读李录2015年北大演讲"
 categories: ["Business Analysis"]
 tags: ["Value Investing", "Buffett", "Munger"]
 summary: ""
-ShowToc: true
-TocOpen: false
 ---
 
 ## About Li Lu

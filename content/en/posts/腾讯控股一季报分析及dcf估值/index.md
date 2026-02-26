@@ -6,8 +6,6 @@ slug: "腾讯控股一季报分析及dcf估值"
 categories: ["Earnings Analysis"]
 tags: ["DCF", "Value Investing", "Financial Statements", "Valuation", "WACC", "Tencent", "Hong Kong", "RMB", "P/E Ratio", "Consumer"]
 summary: ""
-ShowToc: true
-TocOpen: false
 ---
 
 Two nights ago, Tencent Holdings released its Q1 2024 earnings report. Revenue grew 6% year-over-year, while net profit attributable to shareholders surged 62% YoY. Both metrics exceeded market expectations, making for a very impressive quarter.

@@ -6,8 +6,6 @@ slug: "如何计算和使用资本回报率-roic"
 categories: ["Company Valuation"]
 tags: ["ROIC", "Financial Statements", "Valuation", "WACC"]
 summary: ""
-ShowToc: true
-TocOpen: false
 ---
 
 ## How to Calculate Return on Invested Capital (ROIC)

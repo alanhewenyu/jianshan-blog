@@ -6,8 +6,6 @@ slug: "增长率资本回报率roic与自由现金流fcff的关系"
 categories: ["公司估值"]
 tags: ["DCF", "价值投资", "ROIC", "估值", "WACC", "市盈率"]
 summary: ""
-ShowToc: true
-TocOpen: false
 ---
 
 此前的文章分别专门讨论了公司增长、资本回报率（ROIC），以及如何计算自由现金流（FCFF）。在这篇文章中，我们将系统谈一谈三者之间的关系。

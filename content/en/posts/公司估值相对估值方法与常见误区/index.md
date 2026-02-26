@@ -6,8 +6,6 @@ slug: "公司估值相对估值方法与常见误区"
 categories: ["Company Valuation"]
 tags: ["DCF", "Value Investing", "ROIC", "Buffett", "Valuation", "WACC", "A-Shares", "P/E Ratio"]
 summary: ""
-ShowToc: true
-TocOpen: false
 ---
 
 Relative valuation is straightforward and widely used in practice. On the numerator side, the most common metrics are share price (P) or enterprise value (EV). On the denominator side, one can choose from revenue, earnings, cash flow, book value, EBITDA, and other measures. Below is an overview of several commonly used multiples along with key considerations.

@@ -6,8 +6,6 @@ slug: "看懂财务报表从现金流量表开始"
 categories: ["Financial Statement Analysis"]
 tags: ["Value Investing", "Financial Statements", "Valuation", "IFRS"]
 summary: ""
-ShowToc: true
-TocOpen: false
 ---
 
 Between value investing and company valuation, there is a critical bridge: financial statements.
