@@ -6,8 +6,7 @@ slug: "巴菲特给非专业投资者的投资建议定投指数基金"
 categories: ["Buffett & Munger Philosophy"]
 tags: ["Buffett", "Index Funds"]
 summary: ""
-ShowToc: true
-TocOpen: false
+toc: true
 ---
 
 ## Starting with the Vanguard S&P 500 Index Fund

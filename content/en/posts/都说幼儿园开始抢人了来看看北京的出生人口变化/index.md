@@ -6,8 +6,7 @@ slug: "都说幼儿园开始抢人了来看看北京的出生人口变化"
 categories: ["Business Analysis"]
 tags: []
 summary: ""
-ShowToc: true
-TocOpen: false
+toc: true
 ---
 
 Kindergarten enrollment registration has recently kicked off across Beijing's districts. The word on the street is that there are so few children now that even public kindergartens are struggling to fill their spots. Is this really the case? And roughly how much smaller will this year's enrollment cohort be compared to previous years?

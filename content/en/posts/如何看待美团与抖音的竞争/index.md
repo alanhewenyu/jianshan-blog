@@ -6,8 +6,7 @@ slug: "如何看待美团与抖音的竞争"
 categories: ["Business Analysis"]
 tags: ["DCF", "Buffett", "Financial Statements", "Valuation", "Meituan", "RMB", "P/E Ratio"]
 summary: ""
-ShowToc: true
-TocOpen: false
+toc: true
 ---
 
 ## Why Has Meituan's Stock Price Plunged

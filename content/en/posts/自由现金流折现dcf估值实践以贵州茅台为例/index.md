@@ -6,8 +6,7 @@ slug: "自由现金流折现dcf估值实践以贵州茅台为例"
 categories: ["Company Valuation"]
 tags: ["DCF", "Value Investing", "ROIC", "Valuation", "WACC", "Moutai", "P/E Ratio"]
 summary: ""
-ShowToc: true
-TocOpen: false
+toc: true
 ---
 
 In previous articles, we discussed extensively the topics of competitive strategy, value creation, and valuation methodologies. For those less familiar with finance or not working in the investment industry, this content may have felt somewhat abstract, making it difficult to form a concrete understanding of how valuation calculations actually work.

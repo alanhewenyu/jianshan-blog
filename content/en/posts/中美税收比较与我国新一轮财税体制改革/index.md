@@ -6,8 +6,7 @@ slug: "中美税收比较与我国新一轮财税体制改革"
 categories: ["Business Analysis"]
 tags: ["Buffett", "RMB", "Consumption", "Taxation"]
 summary: ""
-ShowToc: true
-TocOpen: false
+toc: true
 ---
 
 The Politburo meeting in late April announced that the Third Plenum of the 20th Central Committee would be convened in July of this year. Historically, every Third Plenum has been tied to major national economic and institutional reforms. The famous Third Plenum of the 11th Central Committee, for instance, ushered in the era of Reform and Opening Up. More recently, the Third Plenum of the 19th Central Committee focused on reforming Party and state institutions. The press release from this latest Politburo meeting emphasized the need to "place reform in a more prominent position and deepen comprehensive reform centered on advancing Chinese-style modernization" -- a clear signal setting the tone for the upcoming Third Plenum.

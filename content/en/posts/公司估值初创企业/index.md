@@ -6,8 +6,7 @@ slug: "公司估值初创企业"
 categories: ["Company Valuation"]
 tags: ["DCF", "Value Investing", "Financial Statements", "Valuation", "P/E Ratio"]
 summary: ""
-ShowToc: true
-TocOpen: false
+toc: true
 ---
 
 Previous articles introduced the two-stage model for discounting free cash flow to the firm, as well as methods for estimating the terminal value in the second stage. This is the standard approach for calculating a company's intrinsic value.

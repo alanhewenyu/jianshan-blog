@@ -6,8 +6,7 @@ slug: "企业的使命与差异化发展策略"
 categories: ["商业分析"]
 tags: ["拼多多", "AI", "消费"]
 summary: ""
-ShowToc: true
-TocOpen: false
+toc: true
 ---
 
 企业存在的使命是为社会提供产品或者服务。产品或服务能否成立，取决于是否有市场需求。

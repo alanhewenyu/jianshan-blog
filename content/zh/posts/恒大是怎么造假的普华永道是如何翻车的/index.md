@@ -6,8 +6,7 @@ slug: "恒大是怎么造假的普华永道是如何翻车的"
 categories: ["商业分析"]
 tags: ["财务报表", "香港", "人民币", "普华永道", "恒大"]
 summary: ""
-ShowToc: true
-TocOpen: false
+toc: true
 ---
 
 ## 恒大财务造假的方式

@@ -6,8 +6,7 @@ slug: "巴菲特的估值逻辑股票的内在价值与模糊的正确"
 categories: ["巴芒思想"]
 tags: ["DCF", "价值投资", "巴菲特", "财务报表", "估值", "市盈率"]
 summary: ""
-ShowToc: true
-TocOpen: false
+toc: true
 ---
 
 ## 内在价值

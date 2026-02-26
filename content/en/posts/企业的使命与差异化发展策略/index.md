@@ -6,8 +6,7 @@ slug: "企业的使命与差异化发展策略"
 categories: ["Business Analysis"]
 tags: ["Pinduoduo", "AI", "Consumer"]
 summary: ""
-ShowToc: true
-TocOpen: false
+toc: true
 ---
 
 The fundamental mission of a business is to provide products or services to society. Whether a product or service is viable depends on whether there is genuine market demand for it.

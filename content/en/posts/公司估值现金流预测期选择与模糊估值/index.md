@@ -6,8 +6,7 @@ slug: "公司估值现金流预测期选择与模糊估值"
 categories: ["Company Valuation"]
 tags: ["Value Investing", "Buffett", "Financial Statements", "Valuation"]
 summary: ""
-ShowToc: true
-TocOpen: false
+toc: true
 ---
 
 When forecasting a company's future cash flows, the first question to address is the length of the forecast period. The standard approach divides this into two stages: the explicit forecast period and the terminal (perpetuity) period. During the explicit forecast period, each financial statement line item needs to be projected individually, such as gross margin, selling expenses, accounts receivable, and inventory. For the terminal period, the terminal value formula can be applied for a straightforward calculation.

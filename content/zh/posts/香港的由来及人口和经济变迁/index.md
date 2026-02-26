@@ -6,8 +6,7 @@ slug: "香港的由来及人口和经济变迁"
 categories: ["商业分析"]
 tags: ["香港", "人民币"]
 summary: ""
-ShowToc: true
-TocOpen: false
+toc: true
 ---
 
 ## **香港里有香港**

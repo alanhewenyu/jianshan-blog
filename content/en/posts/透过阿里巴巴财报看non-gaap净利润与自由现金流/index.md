@@ -6,8 +6,7 @@ slug: "透过阿里巴巴财报看non-gaap净利润与自由现金流"
 categories: ["Financial Statement Analysis"]
 tags: ["Buffett", "Financial Statements", "Valuation", "Tencent", "Alibaba", "Hong Kong", "A-Shares", "RMB", "IFRS"]
 summary: ""
-ShowToc: true
-TocOpen: false
+toc: true
 ---
 
 Alibaba recently released its Q1 2024 earnings on the same day as Tencent. Revenue grew 7% year-over-year, but net income attributable to shareholders plummeted by 96%.

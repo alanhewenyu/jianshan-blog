@@ -6,8 +6,7 @@ slug: "价值投资和公司估值学习进阶指南"
 categories: ["Company Valuation"]
 tags: ["DCF", "Value Investing", "Buffett", "Financial Statements", "Valuation"]
 summary: ""
-ShowToc: true
-TocOpen: false
+toc: true
 ---
 
 Today I've put together an advanced reading list for understanding value investing philosophy and systematically learning company valuation. Whether you work in finance or investing, these books can provide valuable guidance for your work and practice.
