@@ -3,7 +3,6 @@ title: "如果用Excel管理股票持仓，别再手动抄写股价了"
 date: 2026-02-14
 categories:
   - 公司估值
-description: "用 VBA 宏调用 Yahoo Finance API，一键更新 A 股、日股等 Excel 无法自动获取的股票价格。"
 ---
 
 ## 要解决的问题
