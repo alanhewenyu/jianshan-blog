@@ -1,0 +1,13 @@
+/* Reduce homepage whitespace */
+.first-entry {
+  min-height: auto;
+  padding: 20px 0;
+}
+
+.home-info {
+  padding: 20px 0 10px;
+}
+
+.home-info .entry-content {
+  margin-top: 8px;
+}

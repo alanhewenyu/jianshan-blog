@@ -36,10 +36,8 @@ languages:
       description: "价值投资、商业分析"
       author: "沧浪"
       homeInfoParams:
-        Title: "见山笔记"
+        Title: "模糊的正确优于精确的错误"
         Content: >
-          DCF是价值投资的第一性原理。模糊的正确优于精确的错误。
-
           专注于公司估值、商业分析与AI在投资中的应用。
       socialIcons:
         - name: github
@@ -86,10 +84,8 @@ languages:
       description: "Value Investing & Business Analysis"
       author: "沧浪"
       homeInfoParams:
-        Title: "Jianshan Notes"
+        Title: "Being Roughly Right Is Better Than Being Precisely Wrong"
         Content: >
-          DCF is the first principle of value investing. Being roughly right is better than being precisely wrong.
-
           Focused on company valuation, business analysis, and the application of AI in investing.
       socialIcons:
         - name: github
@@ -157,9 +153,9 @@ params:
 
   # Home page mode
   homeInfoParams:
-    Title: "见山笔记"
+    Title: "模糊的正确优于精确的错误"
     Content: >
-      DCF是价值投资的第一性原理。模糊的正确优于精确的错误。
+      专注于公司估值、商业分析与AI在投资中的应用。
 
   # Search
   fuseOpts:
