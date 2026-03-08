@@ -43,6 +43,13 @@ languages:
           params:
             icon: calculator
             newTab: true
+        - identifier: portfolio
+          name: "组合追踪"
+          url: "https://github.com/alanhewenyu/portfolio-tracker"
+          weight: 50
+          params:
+            icon: chart-line
+            newTab: true
       social:
         - identifier: github
           name: "GitHub"
@@ -90,6 +97,13 @@ languages:
           weight: 40
           params:
             icon: calculator
+            newTab: true
+        - identifier: portfolio
+          name: "Portfolio Tracker"
+          url: "https://github.com/alanhewenyu/portfolio-tracker"
+          weight: 50
+          params:
+            icon: chart-line
             newTab: true
       social:
         - identifier: github

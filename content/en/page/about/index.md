@@ -43,6 +43,10 @@ We do not pursue valuations precise to a specific number, but rather seek a deep
 
 We have developed an open-source DCF valuation tool — [ValuX](https://valux-dcf.streamlit.app/) — to help investors quickly perform discounted cash flow analysis.
 
+### Portfolio Tracker
+
+[Portfolio Tracker](https://github.com/alanhewenyu/portfolio-tracker) is an open-source investment portfolio dashboard supporting multi-broker, multi-currency, and multi-market position tracking with real-time pricing, NAV curves, risk analytics, and return attribution.
+
 ### Contact
 
 #### WeChat Official Account: Jianshan Notes (见山笔记)

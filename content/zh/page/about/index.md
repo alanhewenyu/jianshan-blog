@@ -43,6 +43,10 @@ menu:
 
 我们开发了一个开源的DCF估值工具 [ValuX](https://valux-dcf.streamlit.app/)，帮助投资者快速进行现金流折现分析。
 
+### 组合追踪
+
+[Portfolio Tracker](https://github.com/alanhewenyu/portfolio-tracker) 是一个开源的投资组合管理工具，支持多券商、多币种、多市场持仓追踪，提供实时行情、净值曲线、风险分析与收益归因。
+
 ### 联系
 
 #### 微信公众号：见山笔记
