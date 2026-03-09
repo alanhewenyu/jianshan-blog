@@ -1,8 +1,8 @@
 ---
-title: "NVIDIA: After $216 Billion in Revenue, How Many Years of Growth Remain?"
+title: "NVIDIA: After $216 Billion in Annual Revenue, How Long Can Hypergrowth Last?"
 date: 2026-03-09
 draft: false
-slug: "英伟达2160亿美元收入之后增长还剩几年"
+slug: "英伟达2160亿美元年收入之后高速增长还能持续多久"
 categories: ["Company Valuation"]
 tags: ["Valuation"]
 summary: "A DCF analysis suggests NVIDIA is slightly undervalued at ~$178, but growth deceleration and margin compression are key risks."
