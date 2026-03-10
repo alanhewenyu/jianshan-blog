@@ -36,20 +36,12 @@ languages:
           weight: 10
           params:
             icon: home
-        - identifier: valuation
-          name: "估值计算器"
-          url: "https://valux-dcf.streamlit.app/"
+        - identifier: valuescope
+          name: "ValueScope 估值"
+          url: /tools/valuescope/
           weight: 40
           params:
             icon: calculator
-            newTab: true
-        - identifier: portfolio
-          name: "组合追踪"
-          url: "https://github.com/alanhewenyu/portfolio-tracker"
-          weight: 50
-          params:
-            icon: chart-line
-            newTab: true
       social:
         - identifier: github
           name: "GitHub"
@@ -91,20 +83,12 @@ languages:
           weight: 10
           params:
             icon: home
-        - identifier: valuation
-          name: "Valuation Tool"
-          url: "https://valux-dcf.streamlit.app/"
+        - identifier: valuescope
+          name: "ValueScope"
+          url: /en/tools/valuescope/
           weight: 40
           params:
             icon: calculator
-            newTab: true
-        - identifier: portfolio
-          name: "Portfolio Tracker"
-          url: "https://github.com/alanhewenyu/portfolio-tracker"
-          weight: 50
-          params:
-            icon: chart-line
-            newTab: true
       social:
         - identifier: github
           name: "GitHub"

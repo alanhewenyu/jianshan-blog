@@ -363,7 +363,7 @@ def generate_tags(title, content):
 # Valuation Article Generator
 # ==================
 
-VALUX_DB_PATH = os.environ.get("VALUX_DB_PATH", str(Path.home() / "valux" / "valuations.db"))
+VALUX_DB_PATH = os.environ.get("VS_DB_PATH") or os.environ.get("VALUX_DB_PATH", str(Path.home() / "valuescope" / "valuations.db"))
 FMP_API_KEY = os.environ.get("FMP_API_KEY", "")
 
 # Chinese name → ticker mapping for companies with English names in the DB
@@ -915,6 +915,15 @@ def run_valuation(args):
     # Step 10: Generate summary
     zh_summary = generate_summary(title, article_content)
 
+    # Step 10.5: Append ValueScope CTA block (for valuation articles)
+    vs_url = f"https://valuescope.streamlit.app/?ticker={ticker}"
+    cta_zh = (
+        f"\n\n---\n\n"
+        f"> 💡 **想自己动手算一算？** 用 [ValueScope 在线估值工具]({vs_url})，"
+        f"AI 帮你分析参数，免费计算任意股票的内在价值。"
+    )
+    article_content += cta_zh
+
     # Step 11: Create Chinese bundle
     print(f"\n🇨🇳 Creating Chinese article...")
     zh_dir = create_zh_bundle(slug, title, date, category, article_content, ZH_POSTS_DIR, summary=zh_summary)
@@ -1277,6 +1286,16 @@ def main():
     # Step 5: Generate AI summary
     print("\n📝 Generating summary...")
     zh_summary = generate_summary(title, markdown_content)
+
+    # Step 5.5: Append ValueScope CTA for valuation-related articles
+    if args.category in ("公司估值", "投资思考"):
+        cta_zh = (
+            "\n\n---\n\n"
+            "> 💡 **想自己动手算一算？** 用 [ValueScope 在线估值工具]"
+            "(https://valuescope.streamlit.app/)，"
+            "AI 帮你分析参数，免费计算任意股票的内在价值。"
+        )
+        markdown_content += cta_zh
 
     # Step 6: Create Chinese page bundle
     print("\n🇨🇳 Creating Chinese article...")
