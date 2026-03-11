@@ -1,3 +1,14 @@
+{{/* ── hreflang tags for multilingual SEO ── */}}
+{{ if .IsTranslated }}
+  {{ range .AllTranslations }}
+    <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
+  {{ end }}
+  {{/* x-default → default language (Chinese) */}}
+  {{ range .AllTranslations }}
+    {{ if eq .Lang "zh" }}<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />{{ end }}
+  {{ end }}
+{{ end }}
+
 {{ if not (hasPrefix .RelPermalink "/en/") }}
 <script>
 (function() {
