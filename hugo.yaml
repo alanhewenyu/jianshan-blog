@@ -37,11 +37,18 @@ languages:
           params:
             icon: home
         - identifier: valuescope
-          name: "ValueScope 估值"
+          name: "ValueScope 估值工具"
           url: /tools/valuescope/
           weight: 40
           params:
             icon: calculator
+        - identifier: portfolio
+          name: "组合追踪"
+          url: "https://github.com/alanhewenyu/portfolio-tracker"
+          weight: 50
+          params:
+            icon: chart-line
+            newTab: true
       social:
         - identifier: github
           name: "GitHub"
@@ -89,6 +96,13 @@ languages:
           weight: 40
           params:
             icon: calculator
+        - identifier: portfolio
+          name: "Portfolio Tracker"
+          url: "https://github.com/alanhewenyu/portfolio-tracker"
+          weight: 50
+          params:
+            icon: chart-line
+            newTab: true
       social:
         - identifier: github
           name: "GitHub"
