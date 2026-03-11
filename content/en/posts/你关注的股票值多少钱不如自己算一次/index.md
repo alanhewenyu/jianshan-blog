@@ -39,7 +39,7 @@ Both modes generate sensitivity analysis and a valuation verdict (BUY / HOLD / S
 
 **China A-shares and Hong Kong stocks are completely free.** U.S. stocks are also supported with a free financial data account.
 
-Web version: https://valuescope.streamlit.app
+Web version: https://valuescope.app
 
 ![ValueScope Web Interface](img_1.png)
 

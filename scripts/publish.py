@@ -916,7 +916,7 @@ def run_valuation(args):
     zh_summary = generate_summary(title, article_content)
 
     # Step 10.5: Append ValueScope CTA block (for valuation articles)
-    vs_url = f"https://valuescope.streamlit.app/?ticker={ticker}"
+    vs_url = f"https://valuescope.app/?ticker={ticker}"
     cta_zh = (
         f"\n\n---\n\n"
         f"> 💡 **想自己动手算一算？** 用 [ValueScope 在线估值工具]({vs_url})，"
@@ -1292,7 +1292,7 @@ def main():
         cta_zh = (
             "\n\n---\n\n"
             "> 💡 **想自己动手算一算？** 用 [ValueScope 在线估值工具]"
-            "(https://valuescope.streamlit.app/)，"
+            "(https://valuescope.app/)，"
             "AI 帮你分析参数，免费计算任意股票的内在价值。"
         )
         markdown_content += cta_zh

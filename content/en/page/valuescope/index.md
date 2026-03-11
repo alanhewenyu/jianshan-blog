@@ -34,7 +34,7 @@ summary: "Free online DCF valuation tool with AI-driven parameter analysis. Cove
 <div class="vs-hero">
 <h2>Calculate What a Stock Is Really Worth</h2>
 <p>AI-powered DCF valuation for A-shares, HK, US & global stocks — free, no signup required</p>
-<a href="https://valuescope.streamlit.app/" class="vs-cta" target="_blank">Start Valuation →</a>
+<a href="https://valuescope.app/" class="vs-cta" target="_blank">Start Valuation →</a>
 </div>
 
 ---
@@ -102,14 +102,14 @@ summary: "Free online DCF valuation tool with AI-driven parameter analysis. Cove
 ### Popular Stocks
 
 <div class="vs-stocks">
-<a href="https://valuescope.streamlit.app/?ticker=AAPL">🍎 Apple</a>
-<a href="https://valuescope.streamlit.app/?ticker=NVDA">🖥️ NVIDIA</a>
-<a href="https://valuescope.streamlit.app/?ticker=MSFT">💻 Microsoft</a>
-<a href="https://valuescope.streamlit.app/?ticker=GOOGL">🔍 Google</a>
-<a href="https://valuescope.streamlit.app/?ticker=0700.HK">💬 Tencent</a>
-<a href="https://valuescope.streamlit.app/?ticker=600519.SS">🥃 Moutai</a>
-<a href="https://valuescope.streamlit.app/?ticker=PDD">🛒 PDD</a>
-<a href="https://valuescope.streamlit.app/?ticker=7203.T">🚗 Toyota</a>
+<a href="https://valuescope.app/?ticker=AAPL">🍎 Apple</a>
+<a href="https://valuescope.app/?ticker=NVDA">🖥️ NVIDIA</a>
+<a href="https://valuescope.app/?ticker=MSFT">💻 Microsoft</a>
+<a href="https://valuescope.app/?ticker=GOOGL">🔍 Google</a>
+<a href="https://valuescope.app/?ticker=0700.HK">💬 Tencent</a>
+<a href="https://valuescope.app/?ticker=600519.SS">🥃 Moutai</a>
+<a href="https://valuescope.app/?ticker=PDD">🛒 PDD</a>
+<a href="https://valuescope.app/?ticker=7203.T">🚗 Toyota</a>
 </div>
 
 ---
@@ -131,5 +131,5 @@ ValueScope is an open-source AI-powered DCF valuation tool. The foundation is a 
 Fully open source: [GitHub](https://github.com/alanhewenyu/ValueScope)
 
 <div class="vs-bottom-cta">
-<a href="https://valuescope.streamlit.app/" class="vs-cta" target="_blank">Try It Free →</a>
+<a href="https://valuescope.app/" class="vs-cta" target="_blank">Try It Free →</a>
 </div>

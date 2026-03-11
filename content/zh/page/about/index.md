@@ -41,7 +41,7 @@ menu:
 
 ### 估值工具
 
-我们开发了一个开源的DCF估值工具 [ValueScope](https://valuescope.streamlit.app/)，帮助投资者快速进行现金流折现分析。
+我们开发了一个开源的DCF估值工具 [ValueScope](https://valuescope.app/)，帮助投资者快速进行现金流折现分析。
 
 ### 投资组合追踪工具
 

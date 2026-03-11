@@ -41,7 +41,7 @@ We do not pursue valuations precise to a specific number, but rather seek a deep
 
 ### Valuation Tool
 
-We have developed an open-source DCF valuation tool — [ValueScope](https://valuescope.streamlit.app/) — to help investors quickly perform discounted cash flow analysis.
+We have developed an open-source DCF valuation tool — [ValueScope](https://valuescope.app/) — to help investors quickly perform discounted cash flow analysis.
 
 ### Portfolio Tracker
 
