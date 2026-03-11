@@ -176,8 +176,8 @@ params:
   # Google AdSense (auto ads)
   # Steps: 1) Apply at adsense.google.com  2) Get publisher ID  3) Set enabled: true
   adsense:
-    enabled: false
-    publisherId: ""  # e.g. ca-pub-1234567890123456
+    enabled: true
+    publisherId: "ca-pub-8862604119433717"
 
   colorScheme:
     toggle: true
