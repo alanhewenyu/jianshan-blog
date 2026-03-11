@@ -10,6 +10,12 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 
+# Minify settings: keep quotes on HTML attributes (required by Baidu verification)
+minify:
+  tdewolff:
+    html:
+      keepQuotes: true
+
 # CJK word count
 hasCJKLanguage: true
 
