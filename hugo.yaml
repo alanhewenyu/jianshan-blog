@@ -43,7 +43,7 @@ languages:
           params:
             icon: calculator
         - identifier: portfolio
-          name: "组合追踪"
+          name: "投资组合追踪"
           url: "https://github.com/alanhewenyu/portfolio-tracker"
           weight: 50
           params:
