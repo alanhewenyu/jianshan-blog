@@ -1,3 +1,10 @@
+{{/* ── Google AdSense (auto ads) ── */}}
+{{ with .Site.Params.adsense }}
+{{ if and .enabled .publisherId }}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ .publisherId }}" crossorigin="anonymous"></script>
+{{ end }}
+{{ end }}
+
 {{/* ── Baidu Webmaster verification ── */}}
 <meta name="baidu-site-verification" content="codeva-1L6TpFNbIp" />
 
