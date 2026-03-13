@@ -552,11 +552,14 @@ def _call_claude_cli(prompt, max_tokens=4000):
         print("  ❌ claude CLI not found. Install Claude Code first.")
         return None
 
-    cmd = [claude_path, "-p", prompt, "--output-format", "json"]
+    cmd = [claude_path, "-p", prompt, "--output-format", "json", "--verbose"]
 
     # Clean environment to avoid "nested session" errors when run from Claude Code
-    clean_env = {k: v for k, v in os.environ.items() if not k.startswith("CLAUDE")}
+    clean_env = {k: v for k, v in os.environ.items()
+                 if not k.startswith("CLAUDE") and k != "ANTHROPIC_API_KEY"}
     clean_env["PATH"] = os.environ.get("PATH", "/usr/bin:/usr/local/bin")
+    # Ensure HOME is set (needed for claude CLI config)
+    clean_env["HOME"] = os.environ.get("HOME", str(Path.home()))
 
     try:
         result = subprocess.run(
@@ -564,8 +567,11 @@ def _call_claude_cli(prompt, max_tokens=4000):
             timeout=600, env=clean_env, encoding="utf-8", errors="replace",
         )
         if result.returncode != 0:
-            stderr = result.stderr.strip()[:500] if result.stderr else ""
+            stderr = result.stderr.strip()[:500] if result.stderr else "(no stderr)"
+            stdout = result.stdout.strip()[:500] if result.stdout else ""
             print(f"  ❌ claude CLI error (exit {result.returncode}): {stderr}")
+            if stdout:
+                print(f"     stdout: {stdout}")
             return None
 
         raw = result.stdout.strip()
@@ -1314,7 +1320,7 @@ def main():
         else:
             print("  ⚠️  Skipped English version (translation unavailable)")
 
-    # Summary
+    # Summary & auto-publish
     print(f"\n{'='*50}")
     if args.dry_run:
         print("✅ Dry run complete. No files were written.")
@@ -1323,8 +1329,14 @@ def main():
         print(f"   Chinese: content/zh/posts/{slug}/index.md")
         if not args.no_translate:
             print(f"   English: content/en/posts/{slug}/index.md")
-        print(f"\n   Preview with: hugo server -D")
-        print(f"   Then commit:  git add content/ && git commit -m 'Add post: {title}'")
+
+        # Auto commit & push
+        print(f"\n📦 Committing and pushing...")
+        os.chdir(BLOG_ROOT)
+        os.system('git add content/')
+        os.system(f'git commit -m "Add post: {title}"')
+        os.system('git push')
+        print(f"\n🚀 Published to jianshan.co!")
 
 
 if __name__ == "__main__":
