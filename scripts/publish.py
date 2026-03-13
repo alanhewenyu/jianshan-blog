@@ -1213,7 +1213,40 @@ def interactive_mode():
     return url, category, no_translate
 
 
+def print_help():
+    """Print unified help for all commands."""
+    print("""
+见山笔记 — 发布工具
+
+用法:
+  js                                        交互式导入微信文章
+  js <微信链接>                              直接导入微信文章
+  js <微信链接> --category '投资思考'         指定分类
+  js <微信链接> --no-translate               不翻译英文版
+  js <微信链接> --no-images                  不下载图片
+  js <微信链接> --dry-run                    预览，不写文件
+
+  js valuation <股票代码或公司名>             从估值数据库生成文章
+  js valuation 快手                          示例：按中文名查找
+  js valuation NVDA --dry-run               示例：预览不发布
+  js valuation 1024.HK --no-translate       示例：不翻译英文版
+  js valuation 1024.HK --date 2026-03-01    示例：指定发布日期
+
+  js help                                   显示此帮助信息
+
+说明:
+  - 微信文章导入后自动 git commit & push 到 jianshan.co
+  - AI 摘要和英文翻译通过 Claude CLI 生成
+  - 估值文章支持编辑后发布（[p]ublish / [e]dit / [q]uit）
+""")
+
+
 def main():
+    # Show help
+    if len(sys.argv) > 1 and sys.argv[1] in ("help", "--help", "-h"):
+        print_help()
+        return
+
     # Route "valuation" subcommand before argparse (avoids positional arg conflicts)
     if len(sys.argv) > 1 and sys.argv[1] == "valuation":
         val_parser = argparse.ArgumentParser(
