@@ -36,10 +36,6 @@ summary: "Free AI stock analysis platform: DCF intrinsic valuation, relative val
 .vs-screenshot { text-align: center; margin: 2rem 0; }
 .vs-screenshot img { max-width: 100%; border-radius: 12px; box-shadow: var(--shadow-l2); }
 .vs-bottom-cta { text-align: center; padding: 2rem 0; }
-.vs-compare { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.88rem; }
-.vs-compare th { text-align: left; padding: 0.6rem 0.8rem; border-bottom: 2px solid var(--card-text-color-secondary); font-weight: 600; }
-.vs-compare td { padding: 0.5rem 0.8rem; border-bottom: 1px solid rgba(128,128,128,0.15); }
-.vs-compare tr td:first-child { font-weight: 500; }
 </style>
 
 <div class="vs-hero">
@@ -165,22 +161,6 @@ summary: "Free AI stock analysis platform: DCF intrinsic valuation, relative val
 ![ValueScope Web Interface](screenshot.png)
 
 </div>
-
----
-
-### How ValueScope Compares
-
-<table class="vs-compare">
-<tr><th>Feature</th><th>ValueScope</th><th>Morningstar</th><th>GuruFocus</th></tr>
-<tr><td>DCF Valuation</td><td>✅ Full FCFF model</td><td>Proprietary (opaque)</td><td>✅ Simplified</td></tr>
-<tr><td>AI Parameter Estimation</td><td>✅ DeepSeek + web search</td><td>❌</td><td>❌</td></tr>
-<tr><td>Sensitivity Analysis</td><td>✅ Dual-dimension matrix</td><td>❌</td><td>❌</td></tr>
-<tr><td>Relative Valuation Percentiles</td><td>✅ 3/5/10 year</td><td>✅</td><td>✅</td></tr>
-<tr><td>Multi-Dimension Scoring</td><td>✅ 4D transparent radar</td><td>Star rating (opaque)</td><td>Partial</td></tr>
-<tr><td>A-shares / HK stocks</td><td>✅</td><td>Partial</td><td>Partial</td></tr>
-<tr><td>Free</td><td>✅ Completely free</td><td>💰 Premium required</td><td>💰 $450/yr</td></tr>
-<tr><td>Open source</td><td>✅</td><td>❌</td><td>❌</td></tr>
-</table>
 
 ---
 
