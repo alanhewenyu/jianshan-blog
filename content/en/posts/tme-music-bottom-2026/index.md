@@ -71,4 +71,4 @@ There's no definitive answer yet, but several leading indicators are worth track
 
 *Disclaimer: This article is a personal research note and does not constitute investment advice.*
 
-> Want to run the numbers yourself? Try ValueScope (valuescope.app) to calculate a stock's intrinsic value online.
+Want to run the numbers yourself? Try ValueScope (valuescope.app) to calculate a stock's intrinsic value online.
