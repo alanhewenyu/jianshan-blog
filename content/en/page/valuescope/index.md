@@ -43,7 +43,6 @@ summary: "Free AI stock analysis platform: DCF intrinsic valuation, relative val
 <p class="tagline">DCF Intrinsic Valuation · Relative Valuation Percentiles · 4-Dimension Scoring · AI Analysis</p>
 <p class="sub">Covers US, HK, A-shares, Japan & global markets — free, no signup required</p>
 <a href="https://valuescope.app/" class="vs-cta" target="_blank">Start Analyzing →</a>
-<a href="https://github.com/alanhewenyu/ValueScope" class="vs-cta-secondary" target="_blank">GitHub</a>
 </div>
 
 ---
@@ -166,9 +165,7 @@ summary: "Free AI stock analysis platform: DCF intrinsic valuation, relative val
 
 ### About ValueScope
 
-ValueScope is an open-source AI-powered stock analysis platform. The foundation is the Damodaran FCFF valuation framework (10-year discounted cash flow + WACC + terminal value), combined with relative valuation historical percentiles and a 4-dimension scoring system to help you understand a stock's value from multiple angles. The AI layer handles research and analysis, but the final judgment is always yours.
-
-Fully open source: [GitHub](https://github.com/alanhewenyu/ValueScope)
+ValueScope is an AI-powered stock analysis platform. The foundation is the Damodaran FCFF valuation framework (10-year discounted cash flow + WACC + terminal value), combined with relative valuation historical percentiles and a 4-dimension scoring system to help you understand a stock's value from multiple angles. The AI layer handles research and analysis, but the final judgment is always yours.
 
 <div class="vs-bottom-cta">
 <a href="https://valuescope.app/" class="vs-cta" target="_blank">Try It Free →</a>
