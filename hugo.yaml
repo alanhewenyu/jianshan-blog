@@ -50,7 +50,7 @@ languages:
             icon: calculator
         - identifier: portfolio
           name: "投资组合追踪"
-          url: "https://github.com/alanhewenyu/portfolio-tracker"
+          url: "https://valuescope.app/portfolio"
           weight: 50
           params:
             icon: chart-line
@@ -104,7 +104,7 @@ languages:
             icon: calculator
         - identifier: portfolio
           name: "Portfolio Tracker"
-          url: "https://github.com/alanhewenyu/portfolio-tracker"
+          url: "https://valuescope.app/portfolio"
           weight: 50
           params:
             icon: chart-line
