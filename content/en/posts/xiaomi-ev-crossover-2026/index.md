@@ -1,5 +1,5 @@
 ---
-title: "Xiaomi: RMB 457 Billion in Revenue — Is 6% Operating Margin the Ceiling?"
+title: "Xiaomi: Where Is the 6% Operating Margin Headed?"
 date: 2026-03-24
 slug: "xiaomi-ev-crossover-2026"
 categories: ["Company Valuation"]
