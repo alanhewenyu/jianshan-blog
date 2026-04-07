@@ -943,7 +943,21 @@ def run_valuation(args):
             create_en_bundle(slug, en_title, date, en_category, en_tags, en_content, EN_POSTS_DIR, summary=en_summary)
             copy_images_to_en(zh_dir, EN_POSTS_DIR / slug)
         else:
-            print("  ⚠️  Skipped English version")
+            print("  ⚠️  English translation failed!")
+            retry = input("  🔄 Retry translation? [Y/n/skip]: ").strip().lower()
+            if retry in ("", "y", "yes"):
+                print("  🌐 Retrying translation...")
+                result = translate_article(title, article_content, category, tags_zh)
+                if result:
+                    en_title, en_content, en_category, en_tags, en_summary = result
+                    create_en_bundle(slug, en_title, date, en_category, en_tags, en_content, EN_POSTS_DIR, summary=en_summary)
+                    copy_images_to_en(zh_dir, EN_POSTS_DIR / slug)
+                else:
+                    print("  ❌ Translation failed again. Publishing Chinese version only.")
+            elif retry in ("n", "no", "skip"):
+                print("  ⏭️  Skipping English version")
+            else:
+                print("  ⏭️  Skipping English version")
     else:
         print(f"\n⏭️  Skipping English translation")
 
@@ -1351,7 +1365,21 @@ def main():
             create_en_bundle(slug, en_title, date, en_category, en_tags, en_content, EN_POSTS_DIR, summary=en_summary, dry_run=args.dry_run)
             copy_images_to_en(zh_bundle_dir, EN_POSTS_DIR / slug, dry_run=args.dry_run)
         else:
-            print("  ⚠️  Skipped English version (translation unavailable)")
+            print("  ⚠️  English translation failed!")
+            retry = input("  🔄 Retry translation? [Y/n/skip]: ").strip().lower()
+            if retry in ("", "y", "yes"):
+                print("  🌐 Retrying translation...")
+                result = translate_article(title, markdown_content, args.category, tags_zh)
+                if result:
+                    en_title, en_content, en_category, en_tags, en_summary = result
+                    create_en_bundle(slug, en_title, date, en_category, en_tags, en_content, EN_POSTS_DIR, summary=en_summary, dry_run=args.dry_run)
+                    copy_images_to_en(zh_bundle_dir, EN_POSTS_DIR / slug, dry_run=args.dry_run)
+                else:
+                    print("  ❌ Translation failed again. Publishing Chinese version only.")
+            elif retry in ("n", "no", "skip"):
+                print("  ⏭️  Skipping English version")
+            else:
+                print("  ⏭️  Skipping English version")
 
     # Summary & auto-publish
     print(f"\n{'='*50}")
