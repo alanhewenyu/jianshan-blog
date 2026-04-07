@@ -2,7 +2,7 @@
 title: "Goodwill and the Emperor's New Clothes"
 date: 2026-04-01
 slug: "goodwill-and-the-emperors-new-clothes"
-categories: ["Accounting Standards"]
+categories: ["Stories Behind Accounting Standards"]
 tags: ["Goodwill", "Impairment", "IFRS", "Accounting Standards", "M&A", "Amortization", "FASB", "IASB"]
 draft: false
 ---

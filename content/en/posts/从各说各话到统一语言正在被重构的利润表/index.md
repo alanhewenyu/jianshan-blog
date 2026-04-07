@@ -1,7 +1,7 @@
 ---
 title: "From Babel to Common Ground: The Income Statement Is Being Rebuilt"
 date: 2026-04-03
-categories: ["Company Valuation"]
+categories: ["Stories Behind Accounting Standards"]
 tags: ["IFRS 18", "CAS 30", "Income Statement", "Accounting Standards", "Financial Statements", "Operating Profit", "Non-GAAP", "MPM"]
 draft: false
 ---

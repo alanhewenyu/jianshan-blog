@@ -1,7 +1,7 @@
 ---
 title: "Fair Value: Angel or Devil?"
 date: 2026-04-07
-categories: ["Company Valuation"]
+categories: ["Stories Behind Accounting Standards"]
 tags: ["Fair Value", "Mark-to-Market", "Accounting Standards", "Financial Crisis", "SFAS 157", "ASC 820", "IFRS 9"]
 draft: false
 ---

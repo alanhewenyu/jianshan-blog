@@ -52,6 +52,7 @@ CATEGORY_MAP = {
     "投资思考": "Investment Thinking",
     "数据分析": "Data Analysis",
     "工具分享": "Tools & Resources",
+    "会计准则的故事": "Stories Behind Accounting Standards",
 }
 
 # Tag keyword detection (Chinese keyword → tag name)
