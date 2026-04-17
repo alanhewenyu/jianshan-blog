@@ -2,10 +2,12 @@
 title: "Schrödinger's Profit: The Two Fates of R&D Spending"
 date: 2026-04-17
 draft: false
-slug: "薛定谔的利润研发支出的两种命运"
+slug: "schrodingers-profit-two-fates-rd-spending"
 categories: ["Stories Behind Accounting Standards"]
 tags: ["R&D Capitalization", "IAS 38", "Hengrui Medicine", "FASB", "Matching Principle"]
 summary: "How accounting rules let the same R&D spending produce vastly different reported profits."
+aliases:
+  - "/posts/薛定谔的利润研发支出的两种命运/"
 ---
 
 *Stories of Accounting Standards (Part Six)*

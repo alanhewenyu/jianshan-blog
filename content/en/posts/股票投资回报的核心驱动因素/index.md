@@ -2,10 +2,12 @@
 title: "The Core Drivers of Equity Investment Returns"
 date: 2023-12-19
 draft: false
-slug: "股票投资回报的核心驱动因素"
+slug: "core-drivers-equity-investment-returns"
 categories: ["Company Valuation"]
 tags: ["DCF", "Value Investing", "ROIC", "Buffett", "Valuation", "P/E Ratio"]
 summary: "Deconstructs the fundamental drivers of stock investment returns, explaining the relationship between intrinsic value and stock price, and breaking down revenue growth, margins, and ROIC as core financial metrics."
+aliases:
+  - "/posts/股票投资回报的核心驱动因素/"
 ---
 
 ## Equity Investment Returns and Intrinsic Value

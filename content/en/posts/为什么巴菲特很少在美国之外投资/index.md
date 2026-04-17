@@ -2,10 +2,12 @@
 title: "Why Buffett Rarely Invests Outside the United States"
 date: 2024-05-05
 draft: false
-slug: "为什么巴菲特很少在美国之外投资"
+slug: "why-buffett-rarely-invests-outside-united-states"
 categories: ["Buffett & Munger Philosophy"]
 tags: ["Value Investing", "Buffett", "Munger", "Index Funds", "Alibaba", "Hong Kong", "AI"]
 summary: "Examines why Buffett primarily invests in the U.S. market, reviews his overseas cases (BYD, Japanese trading houses), and explores the deeper reasons behind the long-running U.S. bull market."
+aliases:
+  - "/posts/为什么巴菲特很少在美国之外投资/"
 ---
 
 The 2024 Berkshire Hathaway Annual Shareholders Meeting has just concluded. Known as the "Woodstock of Capitalism," it attracts the attention of global investors every year. As a Chinese audience, we are naturally keen to hear Buffett's views on investing in China.

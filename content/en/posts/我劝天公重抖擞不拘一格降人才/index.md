@@ -2,10 +2,12 @@
 title: "I Urge the Heavens to Bestow Talent in Every Form"
 date: 2024-06-07
 draft: false
-slug: "我劝天公重抖擞不拘一格降人才"
+slug: "gaokao-regional-fairness"
 categories: ["Life Reflections"]
 tags: []
 summary: "Reflects on the college entrance exam (Gaokao) season, discussing its fairness and regional disparities, analyzing the significant gap in admission rates between Beijing/Shanghai and provinces like Henan and Shandong."
+aliases:
+  - "/posts/我劝天公重抖擞不拘一格降人才/"
 ---
 
 This morning, a light rain fell over Beijing. It seems that every year around the time of the Gaokao (China's national college entrance examination), rain comes to many parts of the country. This brings to mind a famous line by the Qing dynasty poet Gong Zizhen: "I urge the heavens to rouse their spirit once more, and bestow talent upon us in every form." One hopes that this weather brings a touch of coolness to the examinees, helping them perform at their best.

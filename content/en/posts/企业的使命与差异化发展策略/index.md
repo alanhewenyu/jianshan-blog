@@ -2,10 +2,12 @@
 title: "Corporate Mission and Differentiation Strategies"
 date: 2024-07-11
 draft: false
-slug: "企业的使命与差异化发展策略"
+slug: "corporate-mission-differentiation-strategies"
 categories: ["Business Analysis"]
 tags: ["Pinduoduo", "AI", "Consumer"]
 summary: "Argues that a company's mission is to serve customer needs rather than pure profit, analyzing how differentiation strategies — not price wars — build sustainable business models and competitive advantages."
+aliases:
+  - "/posts/企业的使命与差异化发展策略/"
 ---
 
 The fundamental mission of a business is to provide products or services to society. Whether a product or service is viable depends on whether there is genuine market demand for it.

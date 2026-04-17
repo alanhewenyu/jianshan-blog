@@ -2,10 +2,12 @@
 title: "How to Calculate and Use Return on Invested Capital (ROIC)"
 date: 2023-12-20
 draft: false
-slug: "如何计算和使用资本回报率-roic"
+slug: "how-calculate-use-return-invested-capital-roic"
 categories: ["Company Valuation"]
 tags: ["ROIC", "Financial Statements", "Valuation", "WACC"]
 summary: "Details ROIC calculation methods and practical applications, contrasts ROIC with ROE to show how it eliminates capital structure bias, and explores its link to free cash flow and economic value added."
+aliases:
+  - "/posts/如何计算和使用资本回报率-roic/"
 ---
 
 ## How to Calculate Return on Invested Capital (ROIC)

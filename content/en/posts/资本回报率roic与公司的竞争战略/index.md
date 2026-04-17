@@ -2,10 +2,12 @@
 title: "Return on Invested Capital (ROIC) and Corporate Competitive Strategy"
 date: 2023-12-23
 draft: false
-slug: "资本回报率roic与公司的竞争战略"
+slug: "return-invested-capital-roic-corporate-competitive-strategy"
 categories: ["Company Valuation"]
 tags: ["ROIC", "Buffett", "Pinduoduo", "Consumer"]
 summary: "Decomposes ROIC into operating margin and capital turnover, integrates Porter's Five Forces to analyze industry competition, and explores how corporate competitive strategy drives capital return levels."
+aliases:
+  - "/posts/资本回报率roic与公司的竞争战略/"
 ---
 
 As discussed in a previous article, through DuPont analysis, Return on Invested Capital (ROIC) can be decomposed into two driving variables: operating profit margin and capital turnover. The formula is as follows:

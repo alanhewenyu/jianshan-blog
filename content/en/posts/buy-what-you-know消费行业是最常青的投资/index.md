@@ -2,10 +2,12 @@
 title: "Buy What You Know: Consumer Staples Are the Most Enduring Investment"
 date: 2024-05-30
 draft: false
-slug: "buy-what-you-know消费行业是最常青的投资"
+slug: "buy-what-you-know-consumer-staples-most-enduring-investment"
 categories: ["Business Analysis"]
 tags: ["Buffett", "Financial Statements", "Hong Kong", "A-shares", "Consumer"]
 summary: "Explores Peter Lynch's investment philosophy to analyze why the consumer sector, with its high ROE and brand moats, remains an evergreen track for long-term investing, with A-share ROE comparison across industries."
+aliases:
+  - "/posts/buy-what-you-know消费行业是最常青的投资/"
 ---
 
 ## Buy What You Know

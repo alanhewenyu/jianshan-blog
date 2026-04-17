@@ -2,10 +2,12 @@
 title: "How Much Is Your Stock Worth? Calculate It Yourself"
 date: 2026-02-25
 draft: false
-slug: "你关注的股票值多少钱不如自己算一次"
+slug: "how-much-your-stock-worth-calculate-yourself"
 categories: ["Company Valuation"]
 tags: ["DCF", "AI", "Claude", "Value Investing", "Valuation", "ValueScope"]
 summary: "Introduces ValueScope, an AI-powered interactive DCF valuation tool that combines standardized data processing with AI parameter estimation to help investors calculate intrinsic stock value."
+aliases:
+  - "/posts/你关注的股票值多少钱不如自己算一次/"
 ---
 
 > **Updated on March 11, 2026**: The project has been officially renamed to **ValueScope**. The web version now features Cloud AI (DeepSeek R1 deep reasoning + Serper web search), enabling AI-driven valuation directly in the browser without any local setup. Content below has been updated accordingly.

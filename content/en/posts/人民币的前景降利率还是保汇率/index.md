@@ -2,10 +2,12 @@
 title: "The Outlook for the Renminbi: Cut Interest Rates or Defend the Exchange Rate?"
 date: 2024-06-16
 draft: false
-slug: "人民币的前景降利率还是保汇率"
+slug: "outlook-renminbi-cut-interest-rates-defend-exchange-rate"
 categories: ["Business Analysis"]
 tags: ["Hong Kong", "Renminbi", "Consumption"]
 summary: "Analyzes the RMB outlook through interest rate parity theory, using the yen depreciation as reference, examining how the China-U.S. rate differential and PBOC's exchange rate management mechanism shape policy trade-offs."
+aliases:
+  - "/posts/人民币的前景降利率还是保汇率/"
 ---
 
 ## Factors That Determine Exchange Rates

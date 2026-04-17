@@ -2,10 +2,12 @@
 title: "Understanding Non-GAAP Net Income and Free Cash Flow Through Alibaba's Financial Statements"
 date: 2024-05-17
 draft: false
-slug: "透过阿里巴巴财报看non-gaap净利润与自由现金流"
+slug: "alibaba-non-gaap-net-income-fcf"
 categories: ["Financial Statement Analysis"]
 tags: ["Buffett", "Financial Statements", "Valuation", "Tencent", "Alibaba", "Hong Kong", "A-Shares", "RMB", "IFRS"]
 summary: "Uses Alibaba's quarterly report to explain non-GAAP net profit definitions and adjustment items, comparing GAAP vs. non-GAAP differences to help investors understand internet companies' true profitability."
+aliases:
+  - "/posts/透过阿里巴巴财报看non-gaap净利润与自由现金流/"
 ---
 
 Alibaba recently released its Q1 2024 earnings on the same day as Tencent. Revenue grew 7% year-over-year, but net income attributable to shareholders plummeted by 96%.

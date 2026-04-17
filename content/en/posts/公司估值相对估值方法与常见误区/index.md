@@ -2,10 +2,12 @@
 title: "Company Valuation: Relative Valuation Methods and Common Pitfalls"
 date: 2024-04-12
 draft: false
-slug: "公司估值相对估值方法与常见误区"
+slug: "company-valuation-relative-valuation-methods-common-pitfalls"
 categories: ["Company Valuation"]
 tags: ["DCF", "Value Investing", "ROIC", "Buffett", "Valuation", "WACC", "A-Shares", "P/E Ratio"]
 summary: "Analyzes the proper use and common pitfalls of P/E and other relative valuation metrics, reveals limitations of PEG's linear assumption, and emphasizes ROIC's critical role in valuation."
+aliases:
+  - "/posts/公司估值相对估值方法与常见误区/"
 ---
 
 Relative valuation is straightforward and widely used in practice. On the numerator side, the most common metrics are share price (P) or enterprise value (EV). On the denominator side, one can choose from revenue, earnings, cash flow, book value, EBITDA, and other measures. Below is an overview of several commonly used multiples along with key considerations.

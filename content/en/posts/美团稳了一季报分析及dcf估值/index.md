@@ -2,10 +2,12 @@
 title: "Meituan Is on Solid Ground: Q1 Earnings Analysis and DCF Valuation"
 date: 2024-06-06
 draft: false
-slug: "美团稳了一季报分析及dcf估值"
+slug: "meituan-solid-ground-q1-earnings-analysis-dcf-valuation"
 categories: ["Company Valuation"]
 tags: ["DCF", "Value Investing", "Financial Statements", "Valuation", "WACC", "Tencent", "Meituan", "Hong Kong", "RMB", "Consumer"]
 summary: "Deep analysis of Meituan's Q1 2024 results showing core local commerce margin improving to 17.8% QoQ, suggesting Douyin's competitive threat was lower than expected, with DCF-based valuation estimate."
+aliases:
+  - "/posts/美团稳了一季报分析及dcf估值/"
 ---
 
 Since last December, Meituan's stock price has been on a roller coaster ride, tracing a V-shaped trajectory.

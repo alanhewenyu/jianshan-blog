@@ -2,10 +2,12 @@
 title: "IFRS 18: New Income Statement Structure to Enhance Financial Analysis and DCF Valuation"
 date: 2024-05-15
 draft: false
-slug: "ifrs-18利润表结构新变化助力财务分析和dcf估值"
+slug: "ifrs-18-new-income-statement-structure-enhance-financial"
 categories: ["Company Valuation"]
 tags: ["DCF", "Financial Statements", "Valuation", "Tencent", "Hong Kong", "A-shares", "IFRS"]
 summary: "Explains IFRS 18's major income statement reforms — new operating, investing, and financing categories with an operating profit subtotal — and how they simplify free cash flow calculations for DCF valuation."
+aliases:
+  - "/posts/ifrs-18利润表结构新变化助力财务分析和dcf估值/"
 ---
 
 On April 9, 2024, the International Accounting Standards Board (IASB) issued IFRS 18 — Presentation and Disclosure in Financial Statements. This standard will replace IAS 1 — Presentation of Financial Statements and will become effective on January 1, 2027, with early adoption permitted.

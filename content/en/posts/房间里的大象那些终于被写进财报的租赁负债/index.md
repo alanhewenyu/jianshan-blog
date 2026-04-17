@@ -2,10 +2,12 @@
 title: "The Elephant in the Room: When Lease Liabilities Finally Made It onto the Balance Sheet"
 date: 2026-04-10
 draft: false
-slug: "房间里的大象那些终于被写进财报的租赁负债"
+slug: "lease-liabilities-on-balance-sheet"
 categories: ["Stories Behind Accounting Standards"]
 tags: ["IFRS 16", "operating lease", "off-balance-sheet financing", "balance sheet", "Enron scandal"]
 summary: "How a 20-year battle over accounting standards brought $3 trillion in hidden lease obligations onto corporate balance sheets."
+aliases:
+  - "/posts/房间里的大象那些终于被写进财报的租赁负债/"
 ---
 
 *Stories Behind Accounting Standards (Part 4)*

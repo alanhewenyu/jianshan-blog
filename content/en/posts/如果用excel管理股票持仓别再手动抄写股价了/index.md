@@ -2,10 +2,12 @@
 title: "Stop Manually Copying Stock Prices into Your Excel Portfolio"
 date: 2026-02-14
 draft: false
-slug: "如果用excel管理股票持仓别再手动抄写股价了"
+slug: "stop-manually-copying-stock-prices-into-your-excel-portfolio"
 categories: ["Company Valuation"]
 tags: ["Excel", "VBA", "Yahoo Finance", "Portfolio Management"]
 summary: "Provides a free Excel VBA macro solution that calls the Yahoo Finance API to automatically update global stock prices, eliminating tedious manual data entry for portfolio management."
+aliases:
+  - "/posts/如果用excel管理股票持仓别再手动抄写股价了/"
 ---
 
 ## The Problem
