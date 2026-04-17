@@ -4,7 +4,7 @@ date: 2026-04-13
 draft: false
 slug: "看不见的工资期权到底是不是费用"
 categories: ["Stories Behind Accounting Standards"]
-tags: ["DCF", "Value Investing", "Buffett", "Financial Statements", "Valuation", "Hong Kong", "A-Shares", "P/E Ratio"]
+tags: ["SBC", "APB 25", "FASB", "Option Expensing", "SFAS 123(R)"]
 summary: "The 30-year battle to expense stock options reveals how economics, politics, and accounting standards collide."
 ---
 
