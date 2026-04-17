@@ -2,10 +2,12 @@
 title: "Understanding Financial Statements: Start with the Cash Flow Statement"
 date: 2024-05-27
 draft: false
-slug: "看懂财务报表从现金流量表开始"
+slug: "understanding-financial-statements-start-cash-flow-statement"
 categories: ["Financial Statement Analysis"]
 tags: ["Value Investing", "Financial Statements", "Valuation", "IFRS"]
 summary: "Introduces financial statement analysis starting from the cash flow statement, covering operating, investing, and financing activities to help non-professionals quickly understand accounting language and basic financial analysis."
+aliases:
+  - "/posts/看懂财务报表从现金流量表开始/"
 ---
 
 Between value investing and company valuation, there is a critical bridge: financial statements.

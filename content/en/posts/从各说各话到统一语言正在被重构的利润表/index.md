@@ -4,6 +4,9 @@ date: 2026-04-03
 categories: ["Stories Behind Accounting Standards"]
 tags: ["IFRS 18", "CAS 30", "Income Statement", "Accounting Standards", "Financial Statements", "Operating Profit", "Non-GAAP", "MPM"]
 draft: false
+slug: "babel-common-ground-income-statement-being-rebuilt"
+aliases:
+  - "/posts/从各说各话到统一语言正在被重构的利润表/"
 ---
 
 *The Accounting Standards Story (Part Two)*

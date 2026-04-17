@@ -2,10 +2,12 @@
 title: "An Advanced Reading Guide to Value Investing and Company Valuation"
 date: 2024-05-24
 draft: false
-slug: "价值投资和公司估值学习进阶指南"
+slug: "advanced-reading-guide-value-investing-company-valuation"
 categories: ["Company Valuation"]
 tags: ["DCF", "Value Investing", "Buffett", "Financial Statements", "Valuation"]
 summary: "A curated reading list for advancing in value investing and company valuation, featuring Buffett's shareholder letters, Graham's The Intelligent Investor, and a structured learning path."
+aliases:
+  - "/posts/价值投资和公司估值学习进阶指南/"
 ---
 
 Today I've put together an advanced reading list for understanding value investing philosophy and systematically learning company valuation. Whether you work in finance or investing, these books can provide valuable guidance for your work and practice.

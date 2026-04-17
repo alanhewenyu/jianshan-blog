@@ -2,10 +2,12 @@
 title: "Company Valuation: Startups"
 date: 2024-01-07
 draft: false
-slug: "公司估值初创企业"
+slug: "company-valuation-startups"
 categories: ["Company Valuation"]
 tags: ["DCF", "Value Investing", "Financial Statements", "Valuation", "P/E Ratio"]
 summary: "Explains startup valuation methods: shorter 3-5 year forecast periods, exit value via market multiples, and combining DCF with relative valuation for private equity investment practice."
+aliases:
+  - "/posts/公司估值初创企业/"
 ---
 
 Previous articles introduced the two-stage model for discounting free cash flow to the firm, as well as methods for estimating the terminal value in the second stage. This is the standard approach for calculating a company's intrinsic value.

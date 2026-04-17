@@ -2,10 +2,12 @@
 title: "The Drivers of Corporate Growth and Value Creation"
 date: 2024-01-02
 draft: false
-slug: "公司增长的动能及其价值创造"
+slug: "drivers-corporate-growth-value-creation"
 categories: ["Company Valuation"]
 tags: ["Value Investing", "Buffett", "Pinduoduo", "A-Shares"]
 summary: "Analyzes three corporate growth paths — new markets, existing markets, and M&A — examining how different growth drivers impact value creation, with Pinduoduo and NEV industry case studies."
+aliases:
+  - "/posts/公司增长的动能及其价值创造/"
 ---
 
 To understand the drivers of corporate growth, we must first examine whether the products or services a company offers are in a growing market or a mature market. Whether in a growing or mature market, the growth a company achieves is organic growth. Beyond organic growth, companies can also rapidly scale through mergers and acquisitions. These three distinct paths create different levels of value for a company.

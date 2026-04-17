@@ -2,10 +2,12 @@
 title: "How to Think About the Competition Between Meituan and Douyin"
 date: 2023-12-12
 draft: false
-slug: "如何看待美团与抖音的竞争"
+slug: "how-think-about-competition-between-meituan-douyin"
 categories: ["Business Analysis"]
 tags: ["DCF", "Buffett", "Financial Statements", "Valuation", "Meituan", "RMB", "P/E Ratio"]
 summary: "Analyzes Meituan's core local commerce margin decline amid Douyin's local services competition, breaking down the impact on in-store and delivery businesses and company valuation."
+aliases:
+  - "/posts/如何看待美团与抖音的竞争/"
 ---
 
 ## Why Has Meituan's Stock Price Plunged

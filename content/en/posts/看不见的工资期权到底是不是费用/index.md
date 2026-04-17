@@ -2,10 +2,12 @@
 title: "The Invisible Salary: Are Stock Options Really an Expense?"
 date: 2026-04-13
 draft: false
-slug: "看不见的工资期权到底是不是费用"
+slug: "invisible-salary-stock-options-really-expense"
 categories: ["Stories Behind Accounting Standards"]
 tags: ["SBC", "APB 25", "FASB", "Option Expensing", "SFAS 123(R)"]
 summary: "The 30-year battle to expense stock options reveals how economics, politics, and accounting standards collide."
+aliases:
+  - "/posts/看不见的工资期权到底是不是费用/"
 ---
 
 *The Story of Accounting Standards (Part V)*

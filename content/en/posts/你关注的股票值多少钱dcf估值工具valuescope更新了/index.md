@@ -13,6 +13,9 @@ tags:
   - A-shares
   - AI
 summary: "ValueScope DCF valuation tool major update: web app now powered by DeepSeek R1 AI, supporting US, HK, A-share and Japan markets with both AI and custom valuation modes."
+slug: "valuescope-dcf-tool-update"
+aliases:
+  - "/posts/你关注的股票值多少钱dcf估值工具valuescope更新了/"
 ---
 
 I previously wrote a post called [*What's Your Stock Worth? Why Not Calculate It Yourself*](https://mp.weixin.qq.com/s?__biz=MzkwMTQ0ODE4NQ==&mid=2247484460&idx=1&sn=9ef051bb19a6da708815d3d9f0b06b24&scene=21#wechat_redirect), where I shared a DCF valuation tool called Valux. Since then, many friends have tried installing it and I've received lots of feedback.

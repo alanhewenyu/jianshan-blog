@@ -2,10 +2,12 @@
 title: "US-China Tax Comparison and China's New Round of Fiscal and Tax Reform"
 date: 2024-05-07
 draft: false
-slug: "中美税收比较与我国新一轮财税体制改革"
+slug: "us-china-tax-comparison-chinas-new-round-fiscal-tax-reform"
 categories: ["Business Analysis"]
 tags: ["Buffett", "RMB", "Consumption", "Taxation"]
 summary: "Compares China's indirect-tax-dominated structure with the U.S. direct-tax system, and discusses the direction of China's new round of fiscal and tax reform under the Third Plenum."
+aliases:
+  - "/posts/中美税收比较与我国新一轮财税体制改革/"
 ---
 
 The Politburo meeting in late April announced that the Third Plenum of the 20th Central Committee would be convened in July of this year. Historically, every Third Plenum has been tied to major national economic and institutional reforms. The famous Third Plenum of the 11th Central Committee, for instance, ushered in the era of Reform and Opening Up. More recently, the Third Plenum of the 19th Central Committee focused on reforming Party and state institutions. The press release from this latest Politburo meeting emphasized the need to "place reform in a more prominent position and deepen comprehensive reform centered on advancing Chinese-style modernization" -- a clear signal setting the tone for the upcoming Third Plenum.

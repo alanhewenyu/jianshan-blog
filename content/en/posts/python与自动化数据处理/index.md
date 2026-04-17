@@ -2,10 +2,12 @@
 title: "Python and Automated Data Processing"
 date: 2024-04-25
 draft: false
-slug: "python与自动化数据处理"
+slug: "python-automated-data-processing"
 categories: ["Company Valuation"]
 tags: ["DCF", "Value Investing", "Financial Statements", "Valuation", "Moutai", "Tencent", "Alibaba", "Meituan", "AI"]
 summary: "Shares a non-programmer's experience learning Python for automating financial data processing, covering the importance of historical data for DCF valuation, income statement forecasting, and balance sheet impacts on equity value."
+aliases:
+  - "/posts/python与自动化数据处理/"
 ---
 
 In this article, I'd like to share some personal reflections on learning Python and automated data processing. As a non-computer science professional, my explanations may not be the most technically precise, but I hope that by sharing these experiences, more people can appreciate the role of Python in data processing. For example, when it comes to the company valuation topics we've previously discussed, automated data processing with Python allows us to quickly estimate a company's fair intrinsic value in just one minute -- all you need is to input a few key valuation parameters. The foundational data used in the earlier valuation demonstration of Kweichow Moutai was entirely generated through automation.

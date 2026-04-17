@@ -2,10 +2,12 @@
 title: "Buffett's Investment Advice for Non-Professional Investors: Dollar-Cost Averaging into Index Funds"
 date: 2023-12-07
 draft: false
-slug: "巴菲特给非专业投资者的投资建议定投指数基金"
+slug: "buffetts-investment-advice-non-professional-investors"
 categories: ["Buffett & Munger Philosophy"]
 tags: ["Buffett", "Index Funds"]
 summary: "Explains why Buffett recommends S&P 500 index fund investing for non-professional investors, tracing from Vanguard's founding to Buffett's estate investment instructions and the long-term edge of low-cost index funds."
+aliases:
+  - "/posts/巴菲特给非专业投资者的投资建议定投指数基金/"
 ---
 
 ## Starting with the Vanguard S&P 500 Index Fund

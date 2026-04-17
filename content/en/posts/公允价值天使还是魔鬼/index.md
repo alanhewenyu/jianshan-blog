@@ -4,6 +4,9 @@ date: 2026-04-07
 categories: ["Stories Behind Accounting Standards"]
 tags: ["Fair Value", "Mark-to-Market", "Accounting Standards", "Financial Crisis", "SFAS 157", "ASC 820", "IFRS 9"]
 draft: false
+slug: "fair-value-angel-devil"
+aliases:
+  - "/posts/公允价值天使还是魔鬼/"
 ---
 
 *The Story of Accounting Standards (Part III)*

@@ -2,10 +2,12 @@
 title: "I Used Claude's Latest Model to Run a DCF — The Finance Industry Is About to Change"
 date: 2026-02-10
 draft: false
-slug: "我用claude最新模型算了一次dcf金融行业真的要变天了"
+slug: "claude-dcf-finance-industry"
 categories: ["Company Valuation"]
 tags: ["DCF", "AI", "Claude", "Value Investing", "Valuation"]
 summary: "Tests Claude Opus generating automated DCF valuations and Excel reports for public companies with analyst-grade results, demonstrating how AI is leveling the playing field in financial analysis."
+aliases:
+  - "/posts/我用claude最新模型算了一次dcf金融行业真的要变天了/"
 ---
 
 Is using AI for valuation anything new? It might not sound groundbreaking — many people have already used large language models to fetch various analytical data. But this time, it's truly different.

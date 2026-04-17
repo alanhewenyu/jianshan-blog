@@ -2,10 +2,12 @@
 title: "DCF Valuation in Practice: A Case Study of Kweichow Moutai"
 date: 2024-04-17
 draft: false
-slug: "自由现金流折现dcf估值实践以贵州茅台为例"
+slug: "dcf-valuation-practice-case-study-kweichow-moutai"
 categories: ["Company Valuation"]
 tags: ["DCF", "Value Investing", "ROIC", "Valuation", "WACC", "Moutai", "P/E Ratio"]
 summary: "A step-by-step DCF valuation walkthrough using Kweichow Moutai as a case study, analyzing five years of key financial metrics and their impact on valuation."
+aliases:
+  - "/posts/自由现金流折现dcf估值实践以贵州茅台为例/"
 ---
 
 In previous articles, we discussed extensively the topics of competitive strategy, value creation, and valuation methodologies. For those less familiar with finance or not working in the investment industry, this content may have felt somewhat abstract, making it difficult to form a concrete understanding of how valuation calculations actually work.

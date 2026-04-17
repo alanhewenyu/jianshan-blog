@@ -2,10 +2,12 @@
 title: "A Closer Look at Relative Valuation: P/E Ratio and EV/EBITDA Multiple"
 date: 2024-05-07
 draft: false
-slug: "再谈相对估值-市盈率pe与企业价值倍数ev-ebitda"
+slug: "closer-look-relative-valuation-p-e-ratio-ev-ebitda-multiple"
 categories: ["Company Valuation"]
 tags: ["P/E Ratio", "Valuation", "ROIC"]
 summary: "Deep dive into the limitations of P/E and EV/EBITDA multiples, revealing why short-term earnings metrics may not reflect future company value, considering scale effects and non-recurring items."
+aliases:
+  - "/posts/再谈相对估值-市盈率pe与企业价值倍数ev-ebitda/"
 ---
 
 The P/E ratio and EV/EBITDA multiple are the most commonly used relative valuation multiples among investors. On the numerator side, both P (price) and EV (enterprise value) reflect the present value of a company's future relevant cash flows. However, the denominator captures only the company's most recent earnings (E in P/E) or a cash flow proxy (EBITDA in EV/EBITDA).

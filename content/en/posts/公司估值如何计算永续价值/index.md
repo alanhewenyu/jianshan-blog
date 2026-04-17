@@ -2,10 +2,12 @@
 title: "Company Valuation: How to Calculate Terminal Value"
 date: 2023-12-23
 draft: false
-slug: "公司估值如何计算永续价值"
+slug: "company-valuation-how-calculate-terminal-value"
 categories: ["Company Valuation"]
 tags: ["DCF", "ROIC", "Valuation", "WACC", "Consumer"]
 summary: "Systematically explains terminal value calculation in the two-stage DCF model, including perpetual growth rate determination, the reinvestment-ROIC relationship, and how the terminal value formula is essentially a dividend discount model."
+aliases:
+  - "/posts/公司估值如何计算永续价值/"
 ---
 
 As discussed in previous articles, when valuing a company using discounted cash flow analysis, a two-stage cash flow model is typically employed, consisting of an explicit forecast period and a perpetuity period. The present value of the perpetuity-period cash flows is the company's terminal value.

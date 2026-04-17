@@ -2,10 +2,12 @@
 title: "DCF Valuation: The First Principle for Value Investors"
 date: 2024-05-23
 draft: false
-slug: "自由现金流折现估值dcf是价值投资者的第一性原理"
+slug: "dcf-valuation-first-principle-value-investors"
 categories: ["Company Valuation"]
 tags: ["DCF", "Value Investing", "Buffett", "Munger", "Financial Statements", "Valuation", "Index Funds", "A-Shares", "P/E Ratio"]
 summary: "Starting from Buffett's ten-year bet, explains why discounted cash flow (DCF) valuation is the first principle of value investing, helping ordinary investors build a proper stock valuation framework."
+aliases:
+  - "/posts/自由现金流折现估值dcf是价值投资者的第一性原理/"
 ---
 
 Stock investing is the best way for ordinary people to acquire company equity and share in the growth of corporate revenue and profits.

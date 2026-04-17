@@ -2,10 +2,12 @@
 title: "Colin Huang's Pinduoduo Journey: Local Advantage and Supply-Side Reform"
 date: 2023-12-11
 draft: false
-slug: "黄峥的拼多多之路局部的优势与供给侧改革"
+slug: "colin-huangs-pinduoduo-journey-local-advantage-supply-side"
 categories: ["Business Analysis"]
 tags: ["Alibaba", "Pinduoduo", "Consumption"]
 summary: "Decodes Pinduoduo's rise through Huang Zheng's early writings — the local advantage strategy inspired by the ancient Tian Ji horse racing parable and demand-side aggregation driving supply-side reform innovation."
+aliases:
+  - "/posts/黄峥的拼多多之路局部的优势与供给侧改革/"
 ---
 
 Pinduoduo's market capitalization recently surpassed that of Alibaba, sparking widespread public discussion — even Jack Ma came out to congratulate Pinduoduo. I personally rarely use Pinduoduo for shopping and had been stuck on the impression that the platform was rife with counterfeit and low-quality goods. After doing some research online, I realized that Pinduoduo operates on a fundamentally different business model from Taobao. The reason Pinduoduo can offer low prices while still achieving strong sales is that its core competitive advantage lies in supply chain integration and product selection and operations capabilities. Its overseas e-commerce platform, Temu, takes this model to the extreme.

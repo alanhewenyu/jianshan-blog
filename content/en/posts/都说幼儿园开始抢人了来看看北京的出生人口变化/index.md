@@ -2,10 +2,12 @@
 title: "Kindergartens Are Scrambling for Kids — A Look at Beijing's Birth Population Trends"
 date: 2024-06-04
 draft: false
-slug: "都说幼儿园开始抢人了来看看北京的出生人口变化"
+slug: "kindergartens-scrambling-kids-look-beijings-birth"
 categories: ["Business Analysis"]
 tags: []
 summary: "Analyzes birth population trends across Beijing's 16 districts using official statistics, projecting 2024 kindergarten enrollment decline to provide data-driven insights for parents and educators."
+aliases:
+  - "/posts/都说幼儿园开始抢人了来看看北京的出生人口变化/"
 ---
 
 Kindergarten enrollment registration has recently kicked off across Beijing's districts. The word on the street is that there are so few children now that even public kindergartens are struggling to fill their spots. Is this really the case? And roughly how much smaller will this year's enrollment cohort be compared to previous years?

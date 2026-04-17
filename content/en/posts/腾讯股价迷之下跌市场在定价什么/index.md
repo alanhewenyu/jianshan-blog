@@ -2,10 +2,12 @@
 title: "Tencent's Puzzling Stock Decline — What Is the Market Pricing In?"
 date: 2026-02-13
 draft: false
-slug: "腾讯股价迷之下跌市场在定价什么"
+slug: "tencents-puzzling-stock-decline-what-market-pricing"
 categories: ["Company Valuation"]
 tags: ["DCF", "Tencent", "Value Investing", "Valuation", "Hong Kong"]
 summary: "Investigates Tencent's puzzling stock decline, revealing how P/E metrics are misleading — the true P/E is only ~15x after excluding 1.1 trillion yuan in equity investments — with DCF intrinsic value assessment."
+aliases:
+  - "/posts/腾讯股价迷之下跌市场在定价什么/"
 ---
 
 Tencent Holdings' stock price has fallen more than 10% over the past two weeks, closing at HK$535.5 on February 12, hitting a recent low.
