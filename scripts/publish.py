@@ -349,14 +349,41 @@ def slugify(title):
 
 
 def generate_tags(title, content):
-    """Generate tags based on keyword detection in title + content."""
+    """Generate 3-5 tags for the article using claude CLI.
+    Returns a list of Chinese tag strings; empty list on failure.
+    """
+    print("  🏷️  Generating tags via Claude CLI...")
+
+    prompt = f"""为以下中文博客文章生成 3-5 个标签（tags），用于博客分类和检索。
+
+要求：
+1. 必须是文章真正讨论的核心主题，而非顺带提及的词。
+2. 优先选择具体概念/准则/人物/公司（如 IFRS 16、SBC、巴菲特、腾讯、DCF），而非过于宽泛的词（如"估值"、"财务报表"）。
+3. 忽略文章末尾的自荐/推广段落（例如 ValueScope 链接）。
+4. 每个标签 2-10 个字，用中文（英文缩写保持原样，如 DCF、ROIC、SBC、IFRS）。
+5. 直接输出 3-5 个标签，用英文逗号分隔，不要加引号或其他说明。
+
+示例输出格式：IFRS 16,经营租赁,资产负债表,会计准则,安然事件
+
+文章标题: {title}
+
+文章内容:
+{content[:4000]}"""
+
+    raw = _call_claude_cli(prompt)
+    if not raw:
+        print("  ⚠️  Tag generation failed, using empty list")
+        return []
+
+    # Parse: split by comma (Chinese or English), strip, dedupe, keep order
+    parts = re.split(r"[，,、]+", raw.strip().strip('"').strip("'"))
     tags = []
-    full_text = title + " " + content
-    for tag, keywords in TAG_KEYWORDS.items():
-        for kw in keywords:
-            if kw in full_text:
-                tags.append(tag)
-                break
+    for p in parts:
+        t = p.strip().strip('"').strip("'").strip("#")
+        if t and t not in tags and len(t) <= 20:
+            tags.append(t)
+    tags = tags[:5]
+    print(f"  ✅ Tags: {tags}")
     return tags
 
 
@@ -1043,53 +1070,37 @@ def translate_article(title, markdown_content, category_zh, tags_zh):
     # Map category
     en_category = CATEGORY_MAP.get(category_zh, "Business Analysis")
 
-    # Map tags (simple Chinese → English mapping for common ones)
-    tag_en_map = {
-        "DCF": "DCF",
-        "价值投资": "Value Investing",
-        "ROIC": "ROIC",
-        "巴菲特": "Buffett",
-        "芒格": "Munger",
-        "财务报表": "Financial Statements",
-        "估值": "Valuation",
-        "指数基金": "Index Funds",
-        "WACC": "WACC",
-        "茅台": "Moutai",
-        "腾讯": "Tencent",
-        "阿里巴巴": "Alibaba",
-        "美团": "Meituan",
-        "拼多多": "Pinduoduo",
-        "香港": "Hong Kong",
-        "A股": "A-Shares",
-        "AI": "AI",
-        "市盈率": "P/E Ratio",
-        "消费": "Consumer",
-    }
-    en_tags = [tag_en_map.get(t, t) for t in tags_zh]
+    # Fallback EN tags if Claude doesn't return them (identity for acronyms, ZH kept as-is)
+    en_tags = list(tags_zh)
 
     print("  🌐 Translating to English via Claude CLI...")
+
+    zh_tags_str = ", ".join(tags_zh) if tags_zh else ""
+    tags_prompt_section = f"\nChinese Tags: {zh_tags_str}\n" if zh_tags_str else ""
 
     prompt = f"""Translate the following Chinese blog article into English.
 
 Rules:
 1. Translate the title and the full article body.
 2. Write a one-sentence English summary (50-100 characters) for SEO.
-3. Keep all Markdown formatting (headings, lists, bold, links, images) intact.
-4. Do NOT translate image filenames in ![alt](filename) — keep the filenames exactly as-is.
-5. Maintain the same paragraph structure and tone.
-6. For proper nouns (company names, people), use their common English names.
-7. Output ONLY the translation, no explanations.
+3. Translate each tag to its natural English form. Keep acronyms (DCF, SBC, IFRS 16, FASB, non-GAAP, etc.) unchanged. For Chinese concepts, use the standard English term.
+4. Keep all Markdown formatting (headings, lists, bold, links, images) intact.
+5. Do NOT translate image filenames in ![alt](filename) — keep the filenames exactly as-is.
+6. Maintain the same paragraph structure and tone.
+7. For proper nouns (company names, people), use their common English names.
+8. Output ONLY the translation, no explanations.
 
 Format your response as:
 TITLE: <translated title>
 SUMMARY: <one-sentence English summary>
+TAGS: <comma-separated English tags, same count and order as the Chinese tags>
 ---
 <translated article body in Markdown>
 
 ---
 
 Chinese Title: {title}
-
+{tags_prompt_section}
 Chinese Article:
 {markdown_content}"""
 
@@ -1109,6 +1120,11 @@ Chinese Article:
             en_title = line[6:].strip().strip('"')
         elif line.startswith("SUMMARY:"):
             en_summary = line[8:].strip().strip('"')
+        elif line.startswith("TAGS:"):
+            raw_tags = line[5:].strip().strip('"').strip("'")
+            parsed = [t.strip().strip('"').strip("'") for t in re.split(r"[,，]", raw_tags) if t.strip()]
+            if parsed:
+                en_tags = parsed[:5]
         elif line.strip() == "---":
             body_start = i + 1
             break
@@ -1128,17 +1144,21 @@ Chinese Article:
 # Hugo Page Bundle Creator
 # ==================
 
-def create_zh_bundle(slug, title, date, category, content, dest_dir, summary="", dry_run=False):
+def create_zh_bundle(slug, title, date, category, content, dest_dir, summary="", tags=None, dry_run=False):
     """Create the Chinese page bundle."""
     bundle_dir = dest_dir / slug
 
     # Front matter (matching existing zh posts)
     summary_line = f'\nsummary: "{summary}"' if summary else ""
+    tags_line = ""
+    if tags:
+        tags_str = ", ".join(f'"{t}"' for t in tags)
+        tags_line = f"\ntags: [{tags_str}]"
     front_matter = f"""---
 title: "{title}"
 date: {date}
 categories:
-  - {category}{summary_line}
+  - {category}{tags_line}{summary_line}
 ---"""
 
     full_content = front_matter + "\n\n" + content + "\n"
@@ -1355,9 +1375,9 @@ def main():
     print("\n📝 Converting HTML to Markdown...")
     markdown_content = html_to_markdown(article["html"], image_map=image_map)
 
-    # Step 4: Generate tags
+    # Step 4: Generate tags (via Claude)
+    print("\n🏷️  Generating tags...")
     tags_zh = generate_tags(title, markdown_content)
-    print(f"   Auto-detected tags: {tags_zh}")
 
     # Step 5: Generate AI summary
     print("\n📝 Generating summary...")
@@ -1375,7 +1395,7 @@ def main():
 
     # Step 6: Create Chinese page bundle
     print("\n🇨🇳 Creating Chinese article...")
-    create_zh_bundle(slug, title, date, args.category, markdown_content, ZH_POSTS_DIR, summary=zh_summary, dry_run=args.dry_run)
+    create_zh_bundle(slug, title, date, args.category, markdown_content, ZH_POSTS_DIR, summary=zh_summary, tags=tags_zh, dry_run=args.dry_run)
 
     # Step 7: Translate and create English page bundle
     translation_ok = True

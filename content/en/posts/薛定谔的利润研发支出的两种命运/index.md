@@ -4,7 +4,7 @@ date: 2026-04-17
 draft: false
 slug: "薛定谔的利润研发支出的两种命运"
 categories: ["Stories Behind Accounting Standards"]
-tags: ["DCF", "Value Investing", "ROIC", "Financial Statements", "Valuation", "A-Shares", "AI"]
+tags: ["R&D Capitalization", "IAS 38", "Hengrui Medicine", "FASB", "Matching Principle"]
 summary: "How accounting rules let the same R&D spending produce vastly different reported profits."
 ---
 
