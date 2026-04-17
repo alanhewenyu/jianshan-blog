@@ -1,7 +1,9 @@
 {{/* ── noindex for low-value pages: pagination, tags, categories ── */}}
-{{ if .Paginator }}{{ if gt .Paginator.PageNumber 1 }}
+{{ if or (eq .Kind "home") (eq .Kind "section") (eq .Kind "taxonomy") (eq .Kind "term") }}
+  {{ if .Paginator }}{{ if gt .Paginator.PageNumber 1 }}
 <meta name="robots" content="noindex, follow">
-{{ end }}{{ end }}
+  {{ end }}{{ end }}
+{{ end }}
 {{ if eq .Kind "term" }}
 <meta name="robots" content="noindex, follow">
 {{ end }}

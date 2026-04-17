@@ -580,19 +580,41 @@ def _call_claude_cli(prompt, max_tokens=4000):
             print("  ❌ claude CLI returned empty output")
             return None
 
-        # Parse JSON response
+        # Parse JSON response. With --verbose, newer claude CLI returns a
+        # stream-json array of events; without, a single object. Handle both.
         try:
             data = json.loads(raw)
-            text = data.get("result", raw)
-            # Log model used
-            if "modelUsage" in data:
-                models = data["modelUsage"]
+        except json.JSONDecodeError:
+            return raw.strip()
+
+        result_obj = None
+        if isinstance(data, list):
+            # stream-json: find the final "result" event
+            for ev in data:
+                if isinstance(ev, dict) and ev.get("type") == "result":
+                    result_obj = ev
+                    break
+            if result_obj is None:
+                # fallback: last dict with a "result" field
+                for ev in reversed(data):
+                    if isinstance(ev, dict) and "result" in ev:
+                        result_obj = ev
+                        break
+        elif isinstance(data, dict):
+            result_obj = data
+
+        if result_obj is None:
+            return raw.strip()
+
+        text = result_obj.get("result", raw)
+        if "modelUsage" in result_obj:
+            models = result_obj["modelUsage"]
+            try:
                 primary = max(models, key=lambda m: models[m].get("costUSD", 0))
                 print(f"  🤖 Model: {primary}")
-            return text.strip()
-        except (json.JSONDecodeError, KeyError):
-            # If not JSON, return raw output
-            return raw.strip()
+            except (TypeError, ValueError):
+                pass
+        return text.strip() if isinstance(text, str) else raw.strip()
 
     except subprocess.TimeoutExpired:
         print("  ❌ claude CLI timed out (10 min)")
@@ -1356,6 +1378,7 @@ def main():
     create_zh_bundle(slug, title, date, args.category, markdown_content, ZH_POSTS_DIR, summary=zh_summary, dry_run=args.dry_run)
 
     # Step 7: Translate and create English page bundle
+    translation_ok = True
     if args.no_translate:
         print("\n⏭️  Skipping English translation")
     else:
@@ -1376,11 +1399,14 @@ def main():
                     create_en_bundle(slug, en_title, date, en_category, en_tags, en_content, EN_POSTS_DIR, summary=en_summary, dry_run=args.dry_run)
                     copy_images_to_en(zh_bundle_dir, EN_POSTS_DIR / slug, dry_run=args.dry_run)
                 else:
-                    print("  ❌ Translation failed again. Publishing Chinese version only.")
+                    print("  ❌ Translation failed again.")
+                    translation_ok = False
             elif retry in ("n", "no", "skip"):
                 print("  ⏭️  Skipping English version")
+                translation_ok = False
             else:
                 print("  ⏭️  Skipping English version")
+                translation_ok = False
 
     # Summary & auto-publish
     print(f"\n{'='*50}")
@@ -1391,6 +1417,13 @@ def main():
         print(f"   Chinese: content/zh/posts/{slug}/index.md")
         if not args.no_translate:
             print(f"   English: content/en/posts/{slug}/index.md")
+
+        # Refuse to auto-push when translation failed — avoid silent partial publishes
+        if not translation_ok:
+            print("\n❌ Not pushing: English translation failed.")
+            print("   The Chinese file was written. Fix translation and run:")
+            print("     cd ~/jianshan-blog && git add content/ && git commit && git push")
+            sys.exit(1)
 
         # Auto commit & push
         print(f"\n📦 Committing and pushing...")
