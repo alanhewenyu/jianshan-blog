@@ -53,7 +53,7 @@ menu:
 
 扫码关注，获取最新文章推送：
 
-<img src="/images/wechat-qrcode.jpg" alt="见山笔记微信公众号二维码" style="max-width: 250px;">
+<img src="/images/wechat-qrcode-v2.jpg" alt="见山笔记微信公众号二维码" style="max-width: 250px;">
 
 - 邮箱：alanhe@icloud.com
 - GitHub：[github.com/alanhewenyu](https://github.com/alanhewenyu)

@@ -53,7 +53,7 @@ We have developed an open-source DCF valuation tool — [ValueScope](https://val
 
 Scan to follow and receive the latest article updates:
 
-<img src="/images/wechat-qrcode.jpg" alt="Jianshan Notes WeChat QR Code" style="max-width: 250px;">
+<img src="/images/wechat-qrcode-v2.jpg" alt="Jianshan Notes WeChat QR Code" style="max-width: 250px;">
 
 - Email: alanhe@icloud.com
 - GitHub: [github.com/alanhewenyu](https://github.com/alanhewenyu)
