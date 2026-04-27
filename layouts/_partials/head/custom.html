@@ -1,0 +1,13 @@
+{{- /*
+  Inject `noindex, follow` on low-value aggregation pages.
+  We previously blocked these via robots.txt Disallow, but Google then
+  reports them as "Blocked by robots.txt" because internal links from
+  posts still point at them. The Google-recommended pattern is to let
+  crawlers reach the page, then signal noindex in the page itself.
+
+  - taxonomy: /tags/, /categories/ list pages
+  - term:     /tags/foo/, /categories/bar/ individual term pages
+*/ -}}
+{{- if or (eq .Kind "taxonomy") (eq .Kind "term") -}}
+<meta name="robots" content="noindex, follow">
+{{ end -}}

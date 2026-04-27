@@ -1,9 +1,5 @@
 User-agent: *
 Disallow: /en/search/
 Disallow: /search/
-Disallow: /tags/
-Disallow: /en/tags/
-Disallow: /categories/
-Disallow: /en/categories/
 
 Sitemap: {{ "sitemap.xml" | absURL }}
