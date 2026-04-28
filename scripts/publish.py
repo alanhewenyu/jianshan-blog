@@ -1148,17 +1148,21 @@ def create_zh_bundle(slug, title, date, category, content, dest_dir, summary="",
     """Create the Chinese page bundle."""
     bundle_dir = dest_dir / slug
 
-    # Front matter (matching existing zh posts)
-    summary_line = f'\nsummary: "{summary}"' if summary else ""
+    # YAML-safe quoting via JSON: handles embedded quotes/backslashes correctly.
+    # JSON double-quoted strings are a valid subset of YAML double-quoted strings.
+    def _q(s):
+        return json.dumps(str(s), ensure_ascii=False)
+
+    summary_line = f"\nsummary: {_q(summary)}" if summary else ""
     tags_line = ""
     if tags:
-        tags_str = ", ".join(f'"{t}"' for t in tags)
+        tags_str = ", ".join(_q(t) for t in tags)
         tags_line = f"\ntags: [{tags_str}]"
     front_matter = f"""---
-title: "{title}"
+title: {_q(title)}
 date: {date}
 categories:
-  - {category}{tags_line}{summary_line}
+  - {_q(category)}{tags_line}{summary_line}
 ---"""
 
     full_content = front_matter + "\n\n" + content + "\n"
@@ -1181,15 +1185,18 @@ def create_en_bundle(slug, title, date, category, tags, content, dest_dir, summa
     """Create the English page bundle."""
     bundle_dir = dest_dir / slug
 
-    tags_str = ", ".join(f'"{t}"' for t in tags)
+    def _q(s):
+        return json.dumps(str(s), ensure_ascii=False)
+
+    tags_str = ", ".join(_q(t) for t in tags)
     front_matter = f"""---
-title: "{title}"
+title: {_q(title)}
 date: {date}
 draft: false
-slug: "{slug}"
-categories: ["{category}"]
+slug: {_q(slug)}
+categories: [{_q(category)}]
 tags: [{tags_str}]
-summary: "{summary}"
+summary: {_q(summary)}
 ---"""
 
     full_content = front_matter + "\n\n" + content + "\n"
