@@ -1457,8 +1457,53 @@ def main():
         os.chdir(BLOG_ROOT)
         os.system('git add content/')
         os.system(f'git commit -m "Add post: {title}"')
-        os.system('git push')
-        print(f"\n🚀 Published to jianshan.co!")
+        push_rc = os.system('git push')
+        if push_rc != 0:
+            print("\n❌ git push failed.")
+            sys.exit(1)
+
+        # Wait for GitHub Actions deploy to actually succeed —
+        # a green push doesn't mean Hugo built or the site updated.
+        if shutil.which("gh"):
+            commit_sha = subprocess.run(
+                ["git", "rev-parse", "HEAD"], cwd=BLOG_ROOT,
+                capture_output=True, text=True,
+            ).stdout.strip()
+            print(f"\n⏳ Waiting for GitHub Actions deploy ({commit_sha[:7]})...")
+            import time
+            run_id = None
+            deadline = time.time() + 300  # 5 min total
+            # Poll until the run for this commit appears, then watch it.
+            while time.time() < deadline and not run_id:
+                try:
+                    out = subprocess.run(
+                        ["gh", "run", "list", "--commit", commit_sha,
+                         "--workflow", "deploy.yml",
+                         "--json", "databaseId,status", "--limit", "1"],
+                        cwd=BLOG_ROOT, capture_output=True, text=True, timeout=30,
+                    ).stdout
+                    runs = json.loads(out) if out else []
+                    if runs:
+                        run_id = str(runs[0]["databaseId"])
+                        break
+                except Exception:
+                    pass
+                time.sleep(5)
+            if not run_id:
+                print("⚠️  No Actions run appeared in 5 min; check manually.")
+            else:
+                rc = subprocess.call(
+                    ["gh", "run", "watch", run_id, "--exit-status", "--interval", "10"],
+                    cwd=BLOG_ROOT,
+                )
+                if rc == 0:
+                    print(f"\n🚀 Published to jianshan.co! (build verified)")
+                else:
+                    print("\n❌ Deploy failed on GitHub Actions. The site is NOT updated.")
+                    print(f"   Inspect: gh run view {run_id} --log-failed")
+                    sys.exit(1)
+        else:
+            print(f"\n🚀 Pushed (gh CLI not installed; deploy status unverified).")
 
 
 if __name__ == "__main__":
