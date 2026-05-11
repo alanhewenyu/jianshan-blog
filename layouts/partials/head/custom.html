@@ -22,14 +22,25 @@
 <meta name="baidu-site-verification" content="codeva-1L6TpFNbIp" />
 
 {{/* ── hreflang tags for multilingual SEO ── */}}
+{{/*
+  Bidirectional hreflang between zh and en. Intentionally NO x-default:
+  pointing x-default at the zh version was making Google treat zh as the
+  canonical for the en pages (GSC: "Duplicate, Google chose different
+  canonical than user"), defeating the en SEO effort. With only two
+  languages, hreflang alone lets Google pick the right version per user.
+*/}}
 {{ if .IsTranslated }}
+  {{/* .AllTranslations includes the current page, so this emits both
+       self and the other language as hreflang (reciprocity satisfied). */}}
   {{ range .AllTranslations }}
     <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
   {{ end }}
-  {{/* x-default → default language (Chinese) */}}
-  {{ range .AllTranslations }}
-    {{ if eq .Lang "zh" }}<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />{{ end }}
-  {{ end }}
+{{ end }}
+
+{{/* ── Tell Google these en pages are independent English content,
+       not on-the-fly translations of the zh pages ── */}}
+{{ if hasPrefix .RelPermalink "/en/" }}
+<meta name="google" content="notranslate">
 {{ end }}
 
 {{ if not (hasPrefix .RelPermalink "/en/") }}
