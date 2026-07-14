@@ -569,12 +569,57 @@ def reverse_engineer_market_expectations(sensitivity_json, current_price):
     return result if result else None
 
 
+# Once the CLI reports an auth failure, every subsequent call will fail the
+# same way. Latch it so we skip the remaining AI steps instead of re-prompting.
+_CLAUDE_AUTH_FAILED = False
+
+
+def _extract_result_obj(raw):
+    """Parse claude CLI stdout into the final result event/object, or None.
+
+    With --verbose the CLI emits a stream-json array of events; without it,
+    a single object. Returns the dict carrying the 'result' field, or None if
+    the output isn't JSON we recognise.
+    """
+    try:
+        data = json.loads(raw)
+    except json.JSONDecodeError:
+        return None
+
+    if isinstance(data, dict):
+        return data
+    if isinstance(data, list):
+        for ev in data:
+            if isinstance(ev, dict) and ev.get("type") == "result":
+                return ev
+        for ev in reversed(data):
+            if isinstance(ev, dict) and "result" in ev:
+                return ev
+    return None
+
+
+def _auth_error_hint(result_obj):
+    """Return a one-line remediation hint if result_obj is an auth failure."""
+    status = result_obj.get("api_error_status") if result_obj else None
+    text = (result_obj.get("result") or "") if result_obj else ""
+    if status == 401 or "authenticate" in text.lower() or "401" in text:
+        return ("The standalone `claude` CLI isn't logged in. Run "
+                "`claude setup-token` in a plain terminal (or set "
+                "ANTHROPIC_API_KEY), then retry.")
+    return None
+
+
 def _call_claude_cli(prompt, max_tokens=4000):
     """Call the claude CLI via subprocess. Returns response text or None.
 
     Uses the claude CLI which handles auth via Claude Code / Max subscription,
     avoiding the need for ANTHROPIC_API_KEY.
     """
+    global _CLAUDE_AUTH_FAILED
+    if _CLAUDE_AUTH_FAILED:
+        print("  ⏭️  Skipping AI step (claude CLI auth already failed this run).")
+        return None
+
     claude_path = shutil.which("claude")
     if not claude_path:
         print("  ❌ claude CLI not found. Install Claude Code first.")
@@ -582,56 +627,52 @@ def _call_claude_cli(prompt, max_tokens=4000):
 
     cmd = [claude_path, "-p", prompt, "--output-format", "json", "--verbose"]
 
-    # Clean environment to avoid "nested session" errors when run from Claude Code
-    clean_env = {k: v for k, v in os.environ.items()
-                 if not k.startswith("CLAUDE") and k != "ANTHROPIC_API_KEY"}
-    clean_env["PATH"] = os.environ.get("PATH", "/usr/bin:/usr/local/bin")
-    # Ensure HOME is set (needed for claude CLI config)
+    # When spawned from Claude Code / Desktop, strip session vars that cause
+    # "nested session" errors but keep everything else (including auth).
+    # When run from a plain terminal, the env is already clean.
+    _drop = {"CLAUDECODE", "AI_AGENT", "CLAUDE_CODE_SESSION_ID"}
+    clean_env = {k: v for k, v in os.environ.items() if k not in _drop}
     clean_env["HOME"] = os.environ.get("HOME", str(Path.home()))
+    # Drop empty ANTHROPIC_API_KEY (set by Desktop but unusable standalone)
+    if not clean_env.get("ANTHROPIC_API_KEY"):
+        clean_env.pop("ANTHROPIC_API_KEY", None)
 
     try:
         result = subprocess.run(
             cmd, capture_output=True, text=True,
             timeout=600, env=clean_env, encoding="utf-8", errors="replace",
         )
-        if result.returncode != 0:
-            stderr = result.stderr.strip()[:500] if result.stderr else "(no stderr)"
-            stdout = result.stdout.strip()[:500] if result.stdout else ""
-            print(f"  ❌ claude CLI error (exit {result.returncode}): {stderr}")
-            if stdout:
-                print(f"     stdout: {stdout}")
+        raw = (result.stdout or "").strip()
+        result_obj = _extract_result_obj(raw)
+
+        # The CLI can fail two ways: a non-zero exit, or exit 0 with an error
+        # baked into the result event (is_error / api_error_status). The real
+        # message lives in the result event, not stderr — surface it either way.
+        api_err = bool(result_obj and (result_obj.get("is_error")
+                                       or result_obj.get("api_error_status")))
+        if result.returncode != 0 or api_err:
+            hint = _auth_error_hint(result_obj)
+            if result_obj is not None:
+                status = result_obj.get("api_error_status")
+                msg = result_obj.get("result") or "(no message)"
+                where = f"API {status}" if status else f"exit {result.returncode}"
+                print(f"  ❌ claude CLI error ({where}): {msg}")
+            else:
+                stderr = (result.stderr or "").strip()[:500] or "(no stderr)"
+                print(f"  ❌ claude CLI error (exit {result.returncode}): {stderr}")
+                if raw:
+                    print(f"     stdout: {raw[:500]}")
+            if hint:
+                print(f"  💡 {hint}")
+                _CLAUDE_AUTH_FAILED = True
             return None
 
-        raw = result.stdout.strip()
         if not raw:
             print("  ❌ claude CLI returned empty output")
             return None
 
-        # Parse JSON response. With --verbose, newer claude CLI returns a
-        # stream-json array of events; without, a single object. Handle both.
-        try:
-            data = json.loads(raw)
-        except json.JSONDecodeError:
-            return raw.strip()
-
-        result_obj = None
-        if isinstance(data, list):
-            # stream-json: find the final "result" event
-            for ev in data:
-                if isinstance(ev, dict) and ev.get("type") == "result":
-                    result_obj = ev
-                    break
-            if result_obj is None:
-                # fallback: last dict with a "result" field
-                for ev in reversed(data):
-                    if isinstance(ev, dict) and "result" in ev:
-                        result_obj = ev
-                        break
-        elif isinstance(data, dict):
-            result_obj = data
-
         if result_obj is None:
-            return raw.strip()
+            return raw
 
         text = result_obj.get("result", raw)
         if "modelUsage" in result_obj:
