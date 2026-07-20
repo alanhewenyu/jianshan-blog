@@ -1,9 +1,9 @@
 ---
-title: "ValueScope — AI-Powered Stock Valuation"
+title: "ValueScope — The DCF Valuation Engine Your AI Can Call"
 layout: "page"
 url: "/en/tools/valuescope/"
 slug: "valuescope"
-summary: "Free AI stock analysis platform: DCF intrinsic valuation, relative valuation percentiles, 4-dimension scoring radar. Covers US, HK, A-shares & global stocks."
+summary: "A standardized DCF valuation engine: connect it to Claude / ChatGPT / any AI via MCP and run valuations in chat, or use the web console for manual analysis. A-shares & HK completely free."
 ---
 
 <style>
@@ -15,12 +15,15 @@ summary: "Free AI stock analysis platform: DCF intrinsic valuation, relative val
 .vs-cta:hover { background: #1d4ed8; }
 .vs-cta-secondary { display: inline-block; color: #2563eb !important; padding: 0.75rem 1.5rem; border-radius: 8px; font-size: 1rem; font-weight: 500; text-decoration: none !important; border: 1.5px solid #2563eb; margin-left: 0.8rem; transition: background 0.2s; }
 .vs-cta-secondary:hover { background: rgba(37,99,235,0.06); }
+.vs-mcp { padding: 1.6rem; border-radius: 12px; background: linear-gradient(90deg, rgba(139,92,246,0.08), rgba(37,99,235,0.08)); border: 1px solid rgba(139,92,246,0.25); margin: 2rem 0; }
+.vs-mcp h4 { margin: 0 0 0.6rem; font-size: 1.1rem; }
+.vs-mcp p { font-size: 0.92rem; color: var(--card-text-color-secondary); line-height: 1.7; margin: 0 0 0.6rem; }
+.vs-mcp pre { font-size: 0.82rem; background: var(--card-background); border-radius: 8px; padding: 0.7rem 1rem; overflow-x: auto; margin: 0.6rem 0; }
 .vs-pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2rem; margin: 2rem 0; }
 .vs-pillar { padding: 1.4rem; border-radius: 12px; background: var(--card-background); box-shadow: var(--shadow-l1); }
 .vs-pillar .pillar-header { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.6rem; }
 .vs-pillar .pillar-icon { font-size: 1.6rem; }
 .vs-pillar h4 { margin: 0; font-size: 1.05rem; }
-.vs-pillar .pillar-tag { font-size: 0.7rem; background: #dbeafe; color: #1e40af; padding: 0.15rem 0.5rem; border-radius: 10px; font-weight: 600; }
 .vs-pillar p { font-size: 0.9rem; color: var(--card-text-color-secondary); margin: 0 0 0.5rem; line-height: 1.6; }
 .vs-pillar ul { margin: 0; padding-left: 1.2rem; font-size: 0.85rem; color: var(--card-text-color-secondary); line-height: 1.8; }
 .vs-badges { display: flex; gap: 1.2rem; justify-content: center; flex-wrap: wrap; margin: 1.5rem 0; }
@@ -39,29 +42,40 @@ summary: "Free AI stock analysis platform: DCF intrinsic valuation, relative val
 </style>
 
 <div class="vs-hero">
-<h2>One Tool to Understand Any Stock</h2>
-<p class="tagline">DCF Intrinsic Valuation · Relative Valuation Percentiles · 4-Dimension Scoring · AI Analysis</p>
-<p class="sub">Covers US, HK, A-shares, Japan & global markets — free, no signup required</p>
-<a href="https://valuescope.app/" class="vs-cta" target="_blank">Start Analyzing →</a>
+<h2>The DCF Valuation Engine Your AI Can Call</h2>
+<p class="tagline">Standardized DCF · MCP server for Claude / ChatGPT / any AI · Web console for manual analysis</p>
+<p class="sub">Covers US, HK, A-shares & Japan — A-shares & HK completely free, no signup required</p>
+<a href="https://valuescope.app/mcp" class="vs-cta" target="_blank">🔌 Connect via MCP in 2 Minutes →</a>
+<a href="https://valuescope.app/" class="vs-cta-secondary" target="_blank">Open Web Console →</a>
 </div>
 
 ---
 
-### Four Analysis Dimensions
+### Use It Inside Your AI
+
+<div class="vs-mcp">
+<h4>🔌 The MCP Valuation Engine</h4>
+<p>AI is great at reasoning but bad at staying consistent — run a DCF today and again next month, and the data sources and methodology may differ completely. ValueScope MCP splits the work: <strong>your AI handles the forward-looking judgment</strong> (searching guidance, reasoning about assumptions) while <strong>the engine owns the data and the math</strong> (standardized financials, the DCF model, sensitivity analysis, reverse DCF). Same inputs, same result, every time.</p>
+<pre>claude mcp add valuescope --transport http https://mcp.valuescope.app/mcp</pre>
+<p>Once connected, just ask your AI: <em>"Value Tencent with a DCF."</em> Setup for Claude web, Cherry Studio, ChatGPT and other clients: <a href="https://valuescope.app/mcp" target="_blank">full setup guide →</a></p>
+</div>
+
+---
+
+### Web Console: Four Analysis Dimensions
 
 <div class="vs-pillars">
 <div class="vs-pillar">
 <div class="pillar-header">
 <span class="pillar-icon">📊</span>
 <h4>DCF Intrinsic Valuation</h4>
-<span class="pillar-tag">AI-POWERED</span>
 </div>
 <p>A standardized 10-year FCFF model based on the Damodaran framework — fixed methodology, reproducible results.</p>
 <ul>
-<li>AI generates all DCF parameters in one click (DeepSeek R1 + web search)</li>
+<li>Parameter sliders with instant recalculation, defaults from 5-year historical averages</li>
 <li>Growth Rate × EBIT Margin dual-dimension sensitivity matrix</li>
-<li>Gap Analysis: AI explains valuation-vs-market-price discrepancies</li>
-<li>Full forecast table + valuation bridge + BUY / HOLD / SELL verdict</li>
+<li>Full forecast table + valuation bridge + reverse DCF</li>
+<li>Buffett Quick Valuation: automated Owner Earnings estimate</li>
 </ul>
 </div>
 <div class="vs-pillar">
@@ -123,15 +137,15 @@ summary: "Free AI stock analysis platform: DCF intrinsic valuation, relative val
 </div>
 <div class="vs-step">
 <div class="step-num">3</div>
-<h4>AI Deep Analysis (Optional)</h4>
-<p>Let AI search fundamentals, generate DCF parameters, and complete the valuation</p>
+<h4>Connect Your AI (Optional)</h4>
+<p>Two-minute MCP setup — let your AI research guidance, reason about assumptions, and run the valuation in chat</p>
 </div>
 </div>
 
 <div class="vs-badges">
 <span class="vs-badge">✅ Global market coverage</span>
-<span class="vs-badge">✅ DeepSeek R1 deep reasoning</span>
-<span class="vs-badge">✅ Completely free</span>
+<span class="vs-badge">✅ MCP for any AI client</span>
+<span class="vs-badge">✅ A-shares & HK completely free</span>
 <span class="vs-badge">✅ No signup required</span>
 <span class="vs-badge">✅ Open source</span>
 </div>
@@ -165,8 +179,9 @@ summary: "Free AI stock analysis platform: DCF intrinsic valuation, relative val
 
 ### About ValueScope
 
-ValueScope is an AI-powered stock analysis platform. The foundation is the Damodaran FCFF valuation framework (10-year discounted cash flow + WACC + terminal value), combined with relative valuation historical percentiles and a 4-dimension scoring system to help you understand a stock's value from multiple angles. The AI layer handles research and analysis, but the final judgment is always yours.
+ValueScope is a standardized DCF valuation engine built on the Damodaran FCFF framework (10-year discounted cash flow + WACC + terminal value), combined with relative-valuation historical percentiles and a 4-dimension scoring system. Use it two ways: <strong>connect it to your own AI via MCP</strong> — the AI researches and reasons, the engine owns the data and the math — or <strong>work the parameters by hand in the web console</strong> to test ideas and explore sensitivities. Both run the same engine. The AI brings the intelligence, ValueScope brings the framework and discipline — and the final judgment is always yours.
 
 <div class="vs-bottom-cta">
-<a href="https://valuescope.app/" class="vs-cta" target="_blank">Try It Free →</a>
+<a href="https://valuescope.app/mcp" class="vs-cta" target="_blank">🔌 Connect via MCP →</a>
+<a href="https://valuescope.app/" class="vs-cta-secondary" target="_blank">Open Web Console →</a>
 </div>
