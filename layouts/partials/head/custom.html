@@ -63,3 +63,16 @@
 })();
 </script>
 {{ end }}
+
+{{/* ── Track outbound clicks to valuescope.app (GA4 key event: valuescope_click).
+       Event delegation covers every post + the /valuescope page. ── */}}
+<script>
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href*="valuescope.app"]');
+  if (!a || typeof gtag !== 'function') return;
+  gtag('event', 'valuescope_click', {
+    link_url: a.href,
+    page_path: location.pathname
+  });
+});
+</script>
